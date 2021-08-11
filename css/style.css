@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Darker Grotesque', sans-serif;
+    height: 100%;
+    width: 100%;
+    
+  
+}
+body{
+    height: 100%;
+   /* background-color: rgb(251 251 250);*/
+    background-color: rgb(255 255 255);
+    color: rgb(52 61 65);
+    
+}
+/*inicio de menu*/
+.header{
+    padding: 2px;
+    text-align: center;
+    letter-spacing: 0,5px;
+    background-color: rgb(255 255 255);
+    width: 100%;   
+    position: fixed;
+    height: 10%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.header__menu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+.header__menu ul{
+    list-style: none;
+    background-color: rgb(255 255 255 / 80%);
+    color: rgb(170 125 122);
+    display: flex;
+   
+    
+
+}
+.header__menu ul li{
+    color: rgb(170 125 122);
+    position: relative;
+    width: 24%;
+      
+}
+
+.header__menu ul li a:hover{
+    color: rgb(52 61 65);
+   
+}
+.header__menu ul li a{
+    color: rgb(170 125 122);
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    background-color: rgb(255 255 255 / 20%);
+
+}
+
+.header__menu ul ul{
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 6px;
+   
+
+}
+
+.header__menu ul ul li{
+    display: block;
+    width: 75%;
+    text-align: left;
+    
+}
+
+.header__menu ul li:hover ul{
+    display: block;
+
+}
+.header__redes{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+.header__redes ul {
+    list-style: none;
+}
+/* fin del menu, inicio imagen de fondo con titulo */
+
+.backcolor{
+    background-color: rgb(249 249 248);
+}
+.slider{
+   
+    height: 100%;
+}
+.slider__img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7);
+    object-fit: cover;
+    overflow: auto;
+}
+
+.titulo{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+
+}
+.titulo h1{
+    font-size: 56px;
+    letter-spacing: 4px;
+    font-family: 'Darker Grotesque', sans-serif;
+}  
+ 
+.titulo h2{
+     font-size: 32px;
+     font-family: 'Darker Grotesque', sans-serif;
+   
+}
+
+ /*fin de seccion 1, inicio seccion 2: presentacion */
+
+.sct2{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 75vh;
+    margin-top: 2%;
+    padding: 2%;
+   
+}
+
+.sct2__intro{
+
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.4;
+
+}
+.contact h3{
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+.contact h4{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.contact{
+   
+    margin-top: 5%; 
+    text-align: justify;
+  
+   
+    
+}
+.imgLogo{
+    width: 20px;
+
+    
+}
+.inlineblock{
+  
+    display: inline-block;
+    height: 0px;
+    margin-top: 5px;
+    padding: 5px;
+  
+}
+
+/* fin de seccion 2, inicio seccion 3 servicios mas buscados */
+
+.sct3{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 60vh;
+    border: solid rgb(170 125 122);
+    position: relative;
+    background-color: rgb(255 255 255);
+    
+
+}
+.sct3__servicios{
+    width: 40%;
+    height: 7%;
+    background-color:rgb(52 61 65);
+    position: absolute;
+    top: -3%;
+    left: 32%;
+}
+
+
+
+.sct3__servicios h3{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 2%;
+    background-color: rgb(52 61 65);
+    color: rgb(255 255 255);
+}
+
+.scr3__article{
+    width: 100%;
+    margin-top: 11%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.sct3__article__box{
+    width: 30%;
+    letter-spacing: 0.8px;
+    line-height: 1.3;
+    box-shadow: 2px 2px 6px 0px rgb(170 125 122);
+
+} 
+
+.sct3__article__box img{
+    width: 100%;
+    opacity: 0.8;
+    filter: brightness(0.9);
+
+}
+
+.sct3__article__box__h2{
+    font-size: 18px;
+    
+    padding: 20px;
+}
+.sct3__article__box__p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    padding: 15px;
+    
+}
+.sct3 button{
+    width: 36%;
+    height: 35px;
+    font-size: 14px;
+    transform: translate(80px, 0px);
+   
+}
+
+/* fin seccion 3, inicio imagen de fondo con titulo */
+
+.sct4{
+    width: 80%;
+  
+    margin: 0 auto ;
+    
+    margin-top: 2%;
+    padding: 2%;
+    min-height: 50vh;
+    margin-bottom: 2%;
+  
+}  
+
+.sct4__h2{
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 5%;
+
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
+  
+}
+.sct4__article4 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 4%;
+    flex-direction: row-reverse;
+
+}
+.sct4__article4__box {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 35%;
+    
+    
+}
+.sct4__article4__box2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 65%;
+    
+    
+}
+.sct4__article4__box2 ul{
+    list-style: none;
+}
+.sct4__article4__box ul{
+    list-style: none;
+      
+
+}
+
+/* inicia footer*/
+
+.footer{
+    background-color:rgb(52 61 65);
+    padding: 30px;
+    margin: 0 auto;
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255 255 255);
+    
+}
+.footer__articleFooter{
+    display: flex;
+
+}
+.footer__articleFooter__ftr1 {
+    width: 26%;
+    height: 240px;
+    margin-left: 250px;
+    line-height: 1.9;
+    
+    
+}
+
+.footer__articleFooter__ftr1 h2{
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+.footer__articleFooter__ftr1 ul li{
+    text-align: left;
+    display: list-item;
+    
+    
+}
+
+.footer__articleFooter__ftr1 ul{
+    list-style: none;
+}
+
+.footer__articleFooter__ftr1 ul li a{
+  
+   text-decoration: none;
+   color: rgb(255 255 255);
+}
+.footer__copyR h5{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(255 255 255);
+  
+}
+.footer__articleFooter__margin2{
+    margin-left: 90px;
+}
+
+@media screen and (max-width: 768px){
+    .scr3__article{
+        width: 100%;
+        margin-top: 11%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+}

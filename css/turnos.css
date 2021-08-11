@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Darker Grotesque', sans-serif;
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    height: 100%;
+   /* background-color: rgb(251 251 250);*/
+    background-color: rgb(255 255 255);
+    color: rgb(52 61 65);
+    
+}
+/*inicio de menu*/
+.header{
+    padding: 2px;
+    text-align: center;
+    letter-spacing: 0,5px;
+    background-color: rgb(255 255 255);
+    width: 100%;   
+    position: fixed;
+    height: 10%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.header__menu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+.header__menu ul{
+    list-style: none;
+    background-color: rgb(255 255 255 / 80%);
+    color: rgb(170 125 122);
+    display: flex;
+   
+    
+
+}
+.header__menu ul li{
+    color: rgb(170 125 122);
+    position: relative;
+    width: 24%;
+      
+}
+
+.header__menu ul li a:hover{
+    color: rgb(52 61 65);
+   
+}
+.header__menu ul li a{
+    color: rgb(170 125 122);
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    background-color: rgb(255 255 255 / 20%);
+
+}
+
+.header__menu ul ul{
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 6px;
+   
+
+}
+
+.header__menu ul ul li{
+    display: block;
+    width: 75%;
+    text-align: left;
+    
+}
+
+.header__menu ul li:hover ul{
+    display: block;
+
+}
+.header__redes{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+.header__redes ul {
+    list-style: none;
+}
+.grid{
+    margin-top: 50px;
+    height: 220vh;
+    display: grid;
+    grid-template-columns: 55% 42%;
+    grid-template-rows: 500px 390px 600px 300px 300px;
+    grid-template-areas: 
+    "encabezado encabezado encabezado" 
+    "calendario formulario formulario"
+    "tabla tabla tabla"
+    "informacion informacion informacion"
+    "protocolo protocolo protocolo";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 0 auto;
+    width: 80%;
+   
+}
+
+.grid__informacion{
+    grid-area: encabezado;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+}
+
+.grid__informacion h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 10%;
+
+}
+.grid__informacion p{
+  
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-style: initial;
+    text-align: justify;
+    line-height: 1.6;
+  
+}
+.calendario{
+    grid-area: calendario;
+    display: grid;
+    justify-self: center;
+    width: 95%;
+    height: 95%;
+}
+
+.calendario img{
+    width: 100%;
+    height: 85%;
+    
+}
+
+.form{
+    grid-area: formulario;
+    display: grid;
+    justify-self: end;
+    width: 90%;
+    align-self: start;
+
+}
+
+
+.tabla{
+    grid-area: tabla;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    background-color: rgb(249 249 248);
+  
+
+}
+.tabla h2{
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 16px;
+    height: 7%;
+    padding: 2%;
+    width: 100%;
+    
+
+
+}
+
+table{
+    width: 70%;
+    border: solid 3px rgb(170 125 122);
+    border-collapse: collapse;
+   
+}
+
+th, td{
+    width: 15%;
+    text-align: left;
+    vertical-align: top;
+    border: solid 3px rgb(170 125 122);
+    border-collapse: collapse;
+    border-spacing: 0mm;
+    padding: 10px;
+}
+
+/* inicia footer*/
+
+.footer{
+    background-color:rgb(52 61 65);
+    padding: 30px;
+    margin: 0 auto;
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255 255 255);
+    
+}
+.footer__articleFooter{
+    display: flex;
+
+}
+.footer__articleFooter__ftr1 {
+    width: 26%;
+    height: 240px;
+    margin-left: 250px;
+    line-height: 1.9;
+    
+    
+}
+
+.footer__articleFooter__ftr1 h2{
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+.footer__articleFooter__ftr1 ul li{
+    text-align: left;
+    display: list-item;
+    
+    
+}
+
+.footer__articleFooter__ftr1 ul{
+    list-style: none;
+}
+
+.footer__articleFooter__ftr1 ul li a{
+  
+   text-decoration: none;
+   color: rgb(255 255 255);
+}
+.footer__copyR h5{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(255 255 255);
+  
+}
+.footer__articleFooter__margin2{
+    margin-left: 90px;
+}
