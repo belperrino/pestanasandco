@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pestañas & Co.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css-boostrap/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js"><link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="font/stylesheet 2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
+
 </head>
 <body class="font">
     <!--Menu-->
@@ -30,17 +31,12 @@
                     <li><a href="pages/contacto.html">CONTACTO</a></li>
                 </ul>
              </nav>
-             <div class="header__redes">
-                <ul>
-                    <li>redes sociales</li>
-                </ul>
-            </div>
+             
     </header>
-    <main class="backcolor
-    ">
+    <main class="backcolor">
     <!--slider-->
         <div class="slider">
-             <img class="slider__img" src="images/slider5.jpeg" alt="">    
+             <img class="slider__img img-fluid" src="images/slider5.jpeg" alt="">    
         </div>
         <div class="titulo">
             <h1>Pestañas&Co.</h1>
@@ -48,59 +44,69 @@
         </div>
         
 <!--Presentacion-->
-        <section class="sct2">
-            <article>
-                <div class="sct2__intro">
+        <section class="sct2 container">
+            <article class="row"> 
+                <div class="sct2__intro col-md-6">
                     <p>Mi nombre es <strong>Eugenia Perrino</strong>, apasionada de los detalles, soy artesana de cejas y pestañas naturales. Me encanta mostrarle a cada una de las personas con las que tengo contacto el potencial de sus ojos y conocer el máximo de sus posibilidades. Todo lo que hago está enfocado en acompañar el desarrollo natural del pelo y además de nutrirlo le doy ese push-up que todos vienen buscando cuando se acercan a Chapa. </p>
-                    <br>
                     <p>Inicié Pestañas and Co. con la idea de brindar un espacio especializado en tratamientos para embelleer la mirada.</p>
-                    <br>
                     <p> Mi objetivo principal es atender a cada persona de manaera exclusiva, brindando un servicio en que la calidad de los productos utilizados y el cuidado de lo natural proporcionen una experiencia única. </p>
-                    <br>
                     <p>Considero que el éxito está dado no sólo por mejorar la estética de la mirada sino también por acompañar, asesorar y enseñar a cada cliente sobre qué tratamientos son los más indicados para cada caso y cómo cuidar sus pestañas y cejas.</p>
-                        
                 </div>
-                <div class="contact">
-                    <h3>ENCONTRAME EN REDES:</h3>
-                    <br>
-                <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" class="imgLogo" alt="logo-ig">
-                    <h4 class="inlineblock">@pestanas.lp</h3>
-                    <br>
-                    <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" class="imgLogo" alt="logo-ig">
-                    <h4 class="inlineblock">@eugeniaperrino</h3>
-                    
+                <div class="imagsct2 col-md-6">
+                    <img class="imgeuge" src="images/euge.JPG" alt="foto-euge">
                 </div>
             </article>
         </section> 
     <!--Seccion 3: servicios mas solicitados-->
-        <section class="sct3">
+        <section class="sct3 container">
             <div class="sct3__servicios">
-                <h3> <strong> SERVICIOS MAS SOLICITADOS </strong></h3>
+                <h3>SERVICIOS MAS SOLICITADOS</h3>
             </div>
-            <article class="scr3__article">
-                <div class="sct3__article__box">
-                    <img src="images/lifting.jpg" class="animate__animated animate__zoomIn" alt="lifting">
-                    <h2 class="sct3__article__box__h2">LIFTING DE PESTAÑAS + TINTE + BOTOX</h2>
-                    <button> <strong>Pedí tu turno</strong> </button>
+            <article class="scr3__article row">
+                <div class="sct3__article__box col-md-4" style="width: 18rem;">
+                    <div class="bordes">
+                        <img src="images/lifting.jpg" class="card-img-top" alt="lifting">
+                        <div class="card-body">
+                            <h5 class="card-title">LIFTING PESTAÑAS</h5>
+                            <p class="card-text">Tene tus pestañas curvadas ilumina tu mirada de una forma natural .</p>
+                            <a href="#" class="btn btn-primary">TURNOS</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="sct3__article__box col-md-4" style="width: 18rem;">
+                    <div class="bordes">
+                        <img src="images/perfilado.jpg" class="card-img-top" alt="perfilado">
+                        <div class="card-body">
+                            <h5 class="card-title">PERRFILADO DE CEJAS</h5>
+                            <p class="card-text">Dale forma a tus cejas de acuerdo a las carcateristicas de tu rostro..</p>
+                             <a href="#" class="btn btn-primary">TURNOS</a>
+                        </div>
+                    </div>
         
                 </div>
-                <div class="sct3__article__box">
-                    <img src="images/perfilado.jpg" alt="">
-                    <h2 class="sct3__article__box__h2">PERFILADO + LAMINADO DE CEJAS</h2>
-                   
-                    <button> <strong>Pedí tu turno</strong> </button>
-                </div>
+                <div class="sct3__article__box col-md-4" style="width: 18rem;">
+                    <div class="bordes">
+                        <img src="images/cejas.jpeg" class="card-img-top" alt="laminado">
+                        <div class="card-body">
+                            <h5 class="card-title">LAMINADO DE CEJAS</h5>
+                            <p class="card-text">Alisa tus cejas, dale la direccion que mas te guste.</p>
+                            <a href="#" class="btn btn-primary">TURNOS</a>
+                        </div>
+                    </div>
+                  </div>
+
         
             </article>
         
         </section>
     <!--Seccion 4: razones para hacerte lifting-->
-        <section class="sct4">
-            <div class="sct4__h2">
+        <section class="sct4 container">
+            <div class="sct4__h2 ">
                 <h2>RAZONES PARA HACERTE UN LIFTING DE PESTAÑAS</h2>
             </div>
-            <article class="sct4__article4">
-                <div class="sct4__article4__box">
+            <article class="sct4__article4 row">
+                <div class="sct4__article4__box col-md-6">
                     <ul>
                         <li>Fortalece tus pestañas</li>
                         <li>Tus ojos ganan expresividad</li>
@@ -109,7 +115,7 @@
                     </ul>
                 </div>
                 
-                <div class="sct4__article4__box2">
+                <div class="sct4__article4__box2 col-md-6">
                     <ul>
                         <li>Alarga y curva las pestañas desde la raís de manera natural y duradera.</li>
                         <li>Aporta longitud, densidad, profundidad levantando el párpado y rejuveneciendo la mirada.</li>
@@ -122,34 +128,25 @@
 </main>
 </body>
 <!--Footer-->
-<footer class="footer">
-    <article class="footer__articleFooter">
-        <div class="footer__articleFooter__ftr1">
-            <h2><strong>INFORMACION</strong></h2>
+<footer class="footer container">
+    <div class="footer__contacto">
+        <h2><strong>CONTACTAME</strong></h2>
+        <div class="redes">
+            <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" class="imgLogo" alt="logo-ig">
+            <h3>@pestanas.lp</h3>
             <br>
-            <ul>
-                <li><a href="pages/pestañas.html">Lifting de pestañas</a></li>
-                <li><a href="pages/pestañas.html">Botox de Pestañas</a></li>
-                <li><a href="pages/cejas.html">Perfilado de Cejas</a></li>
-                <li><a href="pages/cejas.html">Laminado de Cejas</a></li>
-                <li><a href="pages/pestañas.html">Matenimiento y Cuidado de las pestañas</a></li>
-             </ul>
-    
-        </div>
-    
-        <div class="footer__articleFooter__ftr1 footer__articleFooter__margin2">
-            <h2><strong>ATENCION AL CLIENTE</strong></h2>
+            <img src="https://pnglux.com/wp-content/uploads/2021/04/1617335549_Whatsapp-PNG-Transparent-Image-990x990.png" alt="logowp">
+            <h3>22149776484</h3>
             <br>
-            <ul>
-                <li><a href="pages/turnos.html">Como reservar mi turno</a></li>
-                <li><a href="pages/turnos.html">Cancelacion de Turnos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-             </ul>
+            <img src="https://i.stack.imgur.com/pQ1Cq.png" class="main__contacto__direccion__imgLogo" alt="maps">
+            <h3>Calle 44 N 1085 entre 44 y 45, La Plata, Buenos Aires, Argentina</h3>
         </div>
+     </div>
+    
     </article>
 
     <div class="footer__copyR">
-        <h5>Pestañas & Co. 2021. Derechos Reservados</h5>
+        <h3>Pestañas & Co. 2021. Derechos Reservados</h3>
     </div>
 </footer>
 </html>
