@@ -69,21 +69,6 @@ body{
 
 }
 
-.header__menu ul ul{
-    position: absolute;
-    display: none;
-    top: 30px;
-    left: 6px;
-   
-
-}
-
-.header__menu ul ul li{
-    display: block;
-    width: 75%;
-    text-align: left;
-    
-}
 
 .header__menu ul li:hover ul{
     display: block;
