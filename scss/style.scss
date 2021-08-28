@@ -30,7 +30,7 @@ body{
     display: flex;
     align-items: center;
 
-    menu{
+    .header__menu{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -47,26 +47,18 @@ body{
                 color: #aa7d7a;
                 position: relative;
                 width: 24%;
-            
-
-                a:hover{
-                    color: #343d41;
-            
-   
+       
                 a{
-                    color: #343d41;
+                    color: #aa7d7a;
                     text-decoration: none;
                     font-size: 16px;
                     display: block;
                     padding: 10px 15px;
                     background-color: #ffffff33;
-
-
-                li:hover ul{
-                    display: block;
-
                 } 
-                } 
+                a:hover{
+                    color: #343d41;
+                    
                 }
             }
         }
@@ -80,7 +72,7 @@ body{
 }
 .slider{
     height: 100%;
-        img{
+        .slider__img{
             width: 100%;
             height: 100%;
             filter: brightness(0.7);
@@ -102,10 +94,11 @@ body{
         font-size: 56px;
         letter-spacing: 4px;
         font-family: 'Darker Grotesque', sans-serif;
+    }    
     h2{
         font-size: 32px;
         font-family: 'Darker Grotesque', sans-serif;
-    }
+    
     }
 }
 
@@ -116,23 +109,24 @@ body{
     margin-top: 2%;
     padding: 2%;
   
-    .intro{
+    .sct2__intro{
         letter-spacing: 1px;
         text-align: justify;
         font-size: 16px;
         line-height: 1.3;
 
             p{
-                font-size: 1.3rem;
-    .imagsct2{
-        width: 50%;
-    .imgeuge{
-    width: 100%;
-
+                font-size: 1.2rem;
             }
+    }    
+    .sct2__imagsct2{
+        width: 50%;
+    
+        .sct2__imagsct2__imgeuge{
+        width: 100%;
+        }
     }
-    } 
-    }      
+         
 }
 
 .inlineblock{
@@ -147,10 +141,10 @@ body{
 /* fin de seccion 2, inicio seccion 3 servicios mas buscados */
 
 .sct3{
-   width: 80%;
+    width: 80%;
     min-height: 56vh;
 
-    .servicios{
+    .sct3__servicios{
                 width: 30%;
                 height: 7%;
                 background-color:#343d41;
@@ -163,30 +157,31 @@ body{
                         padding: 2%;
                         background-color: #343d41;
                         color: #ffffff;
+                    }
+    }
 
-    .article{
+    .sct3__article{
         margin-top: 2%;
 
-        .box{
-            position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            min-width: 0;
-            word-wrap: break-word;
-            background-color: #fff;
-            background-clip: border-box;
-            border: 1px solid #00000020;
-            border-radius: 0.25rem;
+            .sct3__article__box{
+                position: relative;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid #00000020;
+                border-radius: 0.25rem;
 
-                    }
-        }
+            }
     }
-    }
+   
 }
 
 .bordes{
@@ -222,7 +217,7 @@ body{
     min-height: 46vh;
     margin-bottom: 2%;
 
-        .h2{
+        .sct4__h2{
 
             text-align: left;
             letter-spacing: 1px;
@@ -238,25 +233,30 @@ body{
                 h2{
                     font-size: 1.35rem;
                     font-weight: 600;
+                }
+        }
 
-        .article4 {
+        .sct4__article4 {
                     display: flex;
                     justify-content: center;
                     align-items: baseline;
                     margin-top: 4%;
                     flex-direction: row-reverse;
 
-                                .box {
+                                .sct4__article4__box {
                                         font-size: 16px;
                                         letter-spacing: 1px;
                                         line-height: 1.6;
                                                  ul{
-                                                list-style: none;
+                                                    list-style: none;
                                             
-                                                    li{
-                                                        font-size: 1.3rem;
-                                          
-                                .box2 {
+                                                        li{
+                                                            font-size: 1.2rem;
+                                                        }
+                                                 }
+                                }
+                                                    
+                                .sct4__article4__box2 {
                                         font-size: 16px;
                                         letter-spacing: 1px;
                                         line-height: 1.6;
@@ -265,16 +265,11 @@ body{
                                                     list-style: none;
                                               
                                                     li{
-                                                        font-size: 1.3rem;
-                                                    } 
-                                                    }
-                                                }
-                                                }
-                                }
-                                }
-                }
-        }
-        }
+                                                        font-size: 1.2rem;
+                                                    }   
+                                                }              
+                                }   
+        }      
 }  
 
 /* inicia footer*/
@@ -288,36 +283,39 @@ body{
     bottom: 0;
     color: #ffffff;
 
-        .contacto{
-                    width: 100%;
+        .footer__contacto{
+                width: 80%;
+                margin: 0 auto;
 
                     h2{
-                        font-size: 14px;
+                        font-size: 1.2rem;
                         text-align: left;
                         letter-spacing: 1px;
                         line-height: 1.4;
                     }
-        }
-}
+        
 
-.redes{
-    img{
-        width: 3%;
-    h3{
-        display: inline-block;
-        font-size: 12px;
-        text-align: center;
-        letter-spacing: 1px;
-        line-height: 1.4;
-    }
-    }
+
+            .footer__contacto__redes{
+                    img{
+                        width: 3%;
+                    }
+             }    
+                    h3{
+                        display: inline-block;
+                        font-size: 1.1rem;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        line-height: 1.4;
+        }           }
   
-}.footer__copyR h3{
+}
+.footer__copyR h3{
     width: 100%;
     margin: 0 auto;
     padding: 10px;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 1.1rem;
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.4;
