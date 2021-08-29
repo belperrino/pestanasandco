@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pestañas & Co.</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css-boostrap/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="font/stylesheet 2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,13 +42,13 @@
 <!--Presentacion-->
         <section class="sct2 container">
             <article class="row"> 
-                <div class="sct2__intro col-md-6">
+                <div class="sct2__intro col-md-6 col-sm-6">
                     <p>Mi nombre es <strong>Eugenia Perrino</strong>, apasionada de los detalles, soy artesana de cejas y pestañas naturales. Me encanta mostrarle a cada una de las personas con las que tengo contacto el potencial de sus ojos y conocer el máximo de sus posibilidades. Todo lo que hago está enfocado en acompañar el desarrollo natural del pelo y además de nutrirlo le doy ese push-up que todos vienen buscando cuando se acercan a Chapa. </p>
                     <p>Inicié Pestañas and Co. con la idea de brindar un espacio especializado en tratamientos para embelleer la mirada.</p>
                     <p> Mi objetivo principal es atender a cada persona de manaera exclusiva, brindando un servicio en que la calidad de los productos utilizados y el cuidado de lo natural proporcionen una experiencia única. </p>
                     <p>Considero que el éxito está dado no sólo por mejorar la estética de la mirada sino también por acompañar, asesorar y enseñar a cada cliente sobre qué tratamientos son los más indicados para cada caso y cómo cuidar sus pestañas y cejas.</p>
                 </div>
-                <div class="sct2__imagsct2 col-md-6">
+                <div class="sct2__imagsct2 col-md-6 col-sm-6">
                     <img class="sct2__imagsct2__imgeuge img-fluid" src="images/euge.JPG" alt="foto-euge">
                 </div>
             </article>
@@ -59,8 +59,8 @@
                 <h3>SERVICIOS MAS SOLICITADOS</h3>
             </div>
             <article class="scr3__article row">
-                <div class="sct3__article__box col-md-4" style="width: 18rem;">
-                    <div class="bordes">
+                <div class="sct3__article__box col-md-4 col-sm-6 card" style="width: 18rem;">
+                    <div class="bordes margenes">
                         <img src="images/lifting.jpg" class="img-fluid card-img-top" alt="lifting">
                         <div class="card-body">
                             <h5 class="card-title">LIFTING PESTAÑAS</h5>
@@ -70,29 +70,26 @@
                     </div>
                 </div>
             
-                <div class="sct3__article__box col-md-4" style="width: 18rem;">
-                    <div class="bordes">
+                <div class="sct3__article__box col-md-4 col-sm-6 card" style="width: 18rem;">
+                    <div class="bordes margenes">
                         <img src="images/perfilado.jpg" class="img-fluid card-img-top" alt="perfilado">
                         <div class="card-body">
                             <h5 class="card-title">PERRFILADO DE CEJAS</h5>
-                            <p class="card-text">Dale forma a tus cejas de acuerdo a las carcateristicas de tu rostro..</p>
+                            <p id="mrgBot" class="card-text">Dale forma a tus cejas de acuerdo a las carcateristicas de tu rostro..</p>
                              <a href="#" class="btn btn-primary">TURNOS</a>
                         </div>
                     </div>
-        
                 </div>
-                <div class="sct3__article__box col-md-4" style="width: 18rem;">
-                    <div class="bordes">
+                <div class="sct3__article__box col-md-4 col-sm-6 card" style="width: 18rem;">
+                    <div class="bordes margenes">
                         <img src="images/cejas.jpeg" class="card-img-top img-fluid" alt="laminado">
-                        <div class="card-body">
+                        <div class="card-body" id="margenAlto">
                             <h5 class="card-title">LAMINADO DE CEJAS</h5>
-                            <p class="card-text">Alisa tus cejas, dale la direccion que mas te guste.</p>
+                            <p id="margenBajo" class="card-text">Alisa tus cejas, dale la direccion que mas te guste.</p>
                             <a href="#" class="btn btn-primary">TURNOS</a>
                         </div>
                     </div>
                   </div>
-
-        
             </article>
         
         </section>
@@ -102,7 +99,7 @@
                 <h2>RAZONES PARA HACERTE UN LIFTING DE PESTAÑAS</h2>
             </div>
             <article class="sct4__article4 row">
-                <div class="sct4__article4__box col-md-6">
+                <div class="sct4__article4__box col-md-6 col-sm-6">
                     <ul>
                         <li>Fortalece tus pestañas</li>
                         <li>Tus ojos ganan expresividad</li>
@@ -111,7 +108,7 @@
                     </ul>
                 </div>
                 
-                <div class="sct4__article4__box2 col-md-6">
+                <div class="sct4__article4__box2 col-md-6 col-sm-6">
                     <ul>
                         <li>Alarga y curva las pestañas desde la raís de manera natural y duradera.</li>
                         <li>Aporta longitud, densidad, profundidad levantando el párpado y rejuveneciendo la mirada.</li>
@@ -122,6 +119,9 @@
             </article>
         </section>
 </main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 <!--Footer-->
 <footer class="footer">
@@ -138,12 +138,10 @@
             <h3>Calle 44 N 1085 entre 44 y 45, La Plata, Buenos Aires, Argentina</h3>
         </div>
      </div>
-    
-    </article>
 
     <div class="footer__copyR">
         <h3>Pestañas & Co. 2021. Derechos Reservados</h3>
-     </div>
+    </div>
 </footer>
 </html>
 
