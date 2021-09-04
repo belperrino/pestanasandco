@@ -1,73 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pestañas & Co.</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="font/stylesheet.css">
-    <link rel="stylesheet" href="font/stylesheet 2.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pestañas & Co.</title>
+        <link rel="stylesheet" href="../css-boostrap/bootstrap.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="../js/bootstrap.js">
+        <link rel="stylesheet" href="../css/cursos.css">
+        <link rel="stylesheet" href="../font/stylesheet.css">
+        <link rel="stylesheet" href="font/stylesheet 2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
-</head>
-<body class="font">
-    <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="">SERVICIOS</a>
-                    <ul>
-                        <li><a href="pestanas.html">PESTAÑAS</a></li>
-                        <li><a href="cejas.html">CEJAS</a></li>
-                    </ul>
-                </li>
-                <li><a href="turnos.html">TURNOS</a></li>
-                <li><a href="cursos.html">CURSOS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-
-            </ul>
-           
-         </nav>
-</header>
-    <section>
-
         
+    </head>
+    <body class="font">
+        <header class="header">
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="turnos.html">TURNOS</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+             </nav>
+             
+    </header>
+    <section class="sct-informacion container">
+        <div class="sct-informacion__h2">
+            <h2>
+                Si te interesa formarte como lashed y cejas no te pierdas mis cursos.
+            </h2>
+        </div>
+        <div class="sct-informacion__alerta col-md-8">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                
+                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                </symbol>
+               
+              </svg>
+              <div class="alert  d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                <div class="font-size">
+                    <h2>PROXIMOS CURSOS:</h2>
+            
+                    <h3>6 de Noviembre curso de lifting de pestañas.</h3>
+                    <h3>10 de Noviembre: curso de cejas: laminado y perfilado.</h3>
+                </div>
+              </div>
+
+        </div>
+  
     </section>
 
-   
+    <section class="sct-cursoLift container">
+        <div class="sct-cursoLift__info row">
+            <div class="col-md-6">
+                <h2>Curso de lifting de pestañas</h2>
+                <p>En este curso aprenderán las diferentes fases del pelo de la pestaña, diferencias entre Lifting y Permanente, como se realizan el tinte, la permanente y el lifting de pestañas, colorimetria, contra indicaciones y cuidados post tratamiento.</p>
+                <p>Duracion: 6 semanas. Clases dia viernes de 18-20 hs.</p>
+                <p>2 modalidades, 100% online o con practica prsenciales. Este ultimo tiene cupo limitado. Si te interesa hacerlo con practicas ponete en contacto conmigo.</p>
+            </div>
+            <div class="accordion col-md-6" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button font-size" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      TEMARIO
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                       <ul class="font-size-ul">
+                           <li>El sistema lagrimal</li>
+                           <li>Musculos Oculomotores</li>
+                           <li>Anatomia de los Ojos y el Pelo</li>
+                           <li>La visión</li>
+                           <li>La función y las fases del pelo de las pestañas</li>
+                           <li>Contraindicaciones</li>
+                           <li>Reacciones Alergicas-Irritacion de los ojos</li>
+                           <li>Materiales</li>
+                           <li>Tecnica de Lifting de Pestañas</li>
+                           <li>Tecnica de Tinte en Pestañas</li>
+                       </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        
+        <div class="sct-cursoLift__valores col-md-6">
+            <h2>VALORES</h2>
+            <div class="accordion " id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button font-size" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Curso 100% online.
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body font-size-ul">
+                      $8000
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed font-size" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Curso online + practicas presenciales
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body font-size-ul">
+                      11000
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
+    <section class="sct-cursoCejas container">
+        <div class="row">
+            <div class="sct-cursoCejas__info col-md-6">
+                <h2 class="">Curso de cejas: perfilado y laminado</h2>
+                <p>En este curso aprenderanas las diferenres fases del pelo, los principios del perfilado, tipos de productos, cuidados posr tratamiento.</p>
+                <p>2 modalidades, 100% online o con practicas presenciales. En caso de estar interesada en realizar practicas ponete en contacto conmigo, los cupos son limitados y suelen agotarse rapidamente.</p>
+            </div>
+
+            <div class="col-md-6"> 
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header font-size" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button font-size" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          TEMARIO
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                           <ul class="font-size-ul">
+                               <li>El sistema lagrimal</li>
+                               <li>Musculos Oculomotores</li>
+                               <li>Anatomia de los Ojos y el Pelo</li>
+                               <li>La visión</li>
+                               <li>La función y las fases del pelo de las pestañas</li>
+                               <li>Contraindicaciones</li>
+                               <li>Reacciones Alergicas-Irritacion de los ojos</li>
+                               <li>Materiales</li>
+                               <li>Tecnica de Lifting de Pestañas</li>
+                               <li>Tecnica de Tinte en Pestañas</li>
+                           </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sct-cursoCejas__valores">
+                <h2>VALORES</h2>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header font-size" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button font-size" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Curso 100% online.
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body font-size-ul">
+                          $8000
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header font-size" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed font-size" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Curso online + practicas presenciales
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body font-size-ul">
+                          11000
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="sct-info2 container">
+        <div class="sct-info2__h2">
+          <h2>INFORMACION SOBRE LOS CURSOS</h2>  
+        </div>
+        <div class="sct-info2__p">
+            <p>Al finalizar los cursos tendras un examen online, y deberas entregar imagenes donde muestres tu trabajo.
+                <br>
+            Una vez aprobadas las intancias de evaluacion se te inviara dentro de los 15 dias tu certificado.
+            <br>
+            Junto con el certificado se te eviara el acceso gratuito a una plataformas de turnos online.
+            <br>
+            Los cursos se dictan a traves de una plataforma virtual. Luego de realizar el pago se te enviara un mail con tu usuario y contraseña.
+            <br>
+            En la plataforma encontraras el link para la clase en vivo, material de lectura complementarias y videos explicativos.
+            </p>
+
+        </div>
+        
+
+    </section>
+
+   <section class="sct-formulario container">
+       <div>
+           <h2>FORMULARIO DE INSCRIPCION</h2>
+       </div>
+       
+       <div class="sct-formulario__form">
+            <form class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+          
+        <div class="col-md-12">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Calle 44 1085">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Direccion </label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Piso, Departamento">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Provincia</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Codigo Postal</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label font-size-ul" for="gridCheck">
+              He leido toda la información sobre los cursos.
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary font-size">Enviar</button>
+        </div>
+      </form>
+       </div>
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 
 
 
-<footer class="piePagina">
-   
-    <div class="piePagina__ftr1">
-        <h2><strong>INFORMACION</strong></h2>
-        <ul>
-            <li><a href="pages/pestañas.html">Lifting de pestañas</a></li>
-            <li><a href="pages/pestañas.html">Botox de Pestañas</a></li>
-            <li><a href="pages/cejas.html">Perfilado de Cejas</a></li>
-            <li><a href="pages/cejas.html">Laminado de Cejas</a></li>
-            <li><a href="pages/pestañas.html">Matenimiento y Cuidado de las pestañas</a></li>
-         </ul>
+<footer class="footer">
+    <div class="footer__contacto">
+        <h2><strong>CONTACTAME</strong></h2>
+        <div class="footer__contacto__redes">
+            <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" alt="logo-ig">
+            <h3>@pestanas.lp</h3>
+            <br>
+            <img src="https://pnglux.com/wp-content/uploads/2021/04/1617335549_Whatsapp-PNG-Transparent-Image-990x990.png" alt="logowp">
+            <h3>22149776484</h3>
+            <br>
+            <img src="https://i.stack.imgur.com/pQ1Cq.png" class="main__contacto__direccion__imgLogo" alt="maps">
+            <h3>Calle 44 N 1085 entre 44 y 45, La Plata, Buenos Aires, Argentina</h3>
+        </div>
+     </div>
+    
+    </article>
 
+    <div class="footer__copyR">
+        <h3>Pestañas & Co. 2021. Derechos Reservados</h3>
     </div>
-
-    <div class="piePagina__ftr1">
-        <h2><strong>ATENCION AL CLIENTE</strong></h2>
-        <ul>
-            <li><a href="pages/turnos.html">Como reservar mi turno</a></li>
-            <li><a href="pages/turnos.html">Cancelacion de Turnos</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-         </ul>
-    </div>
-    <br>
-    <div class="piePagina__copyR">
-        <h5>Pestañas & Co. 2021. Derechos Reservados</h5>
- 
-    </div>
-
 </footer>
 </html>
 

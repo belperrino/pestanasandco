@@ -1,4 +1,8 @@
 @import './colores';
+
+$width-sct: 20rem;
+$theme: 'dark-mode';
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +16,8 @@ html{
 body{
     height: 100%;
     background-color: $color-secundario;
-    font-family: 'Darker Grotesque', sans-serif;     
+    font-family: 'Darker Grotesque', sans-serif; 
+        
 }
 
 /*inicio de menu*/
@@ -161,7 +166,7 @@ body{
                         padding: 0.5rem;
                         background-color: $color-footer;
                         color: $color-principal;
-                        width: 20rem;
+                        width: $width-sct;
                         height: 2.8rem;
                     }
     }
@@ -253,7 +258,7 @@ body{
                     height: 2.8rem;
                     background-color: $color-footer;
                     color: $color-principal;
-                    width: 32rem;
+                    width: $width-sct + 12;
                     padding: 0.5rem;
                     text-align: center;
                 
@@ -344,4 +349,18 @@ body{
             letter-spacing: 1px;
             line-height: 1.4;
         }
+}
+
+@if $theme == 'dark-mode'{
+    body{
+        background-color: #343d41;
+    }
+} @else if $theme =='tierra'{
+    body{
+        background-color: #aa7d7a;
+    }
+} @else {
+    body{
+        background-color: #ffffff;
+    }
 }

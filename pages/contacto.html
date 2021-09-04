@@ -1,125 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pestañas & Co.</title>
-    <link rel="stylesheet" href="../css/contacto.css">
-    <link rel="stylesheet" href="../font/stylesheet.css">
-    <link rel="stylesheet" href="../font/stylesheet 2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pestañas & Co.</title>
+        <link rel="stylesheet" href="../css-boostrap/bootstrap.css">
+        <link rel="stylesheet" href="../js/bootstrap.js">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="stylesheet" href="../font/stylesheet.css">
+        <link rel="stylesheet" href="font/stylesheet 2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
-</head>
-<body class="font">
-    <header class="header">
-        <nav class="header__menu">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="">SERVICIOS</a>
-                    <ul>
-                        <li><a href="pestanas.html">PESTAÑAS</a></li>
-                        <li><a href="cejas.html">CEJAS</a></li>
-                    </ul>
-                </li>
-                <li><a href="turnos.html">TURNOS</a></li>
-                <li><a href="cursos.html">CURSOS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-         </nav>
-         <div class="header__redes">
-            <ul>
-                <li>redes sociales</li>
-            </ul>
-        </div>
+        
+    </head>
+    <body class="font">
+        <header class="header">
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="turnos.html">TURNOS</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+             </nav>
+             
     </header>
-    <main class="main">
-        <section class="main__section">
-            <div class="main__section__img">
-                <img src="../images/imagen contacto.jpg" alt=""> 
 
+    <section class="sct-form container">
+
+        <form class="row g-3 font-size">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputEmail4">
             </div>
-        
-            <div class="main__section__form">
-
-                <form class="inlineblock" action="">
-                    <div class="main__section__form__formhijo">
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" name="Nombre">
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">  
+            </div>
+            <div class="col-12 form-floating">
+                <label for="floatingTextarea">Comentarios</label>
+                <textarea class="form-control" placeholder="Deja tu comentario" id="floatingTextarea"></textarea>
                 
-                
-                        <label for="Apellido">Apellido</label>
-                        <input type="text" name="Apellido">
-                        <br>
-                        <br>
-                        <label for="mail">Mail</label>
-                        <input type="text" name="Mail">
-                    </div>
-            
-                    <div class="main__section__form__formhijo">
-                        <label for="comentarios">Deja tu comentario</label>
-                        <br>
-                        <br>
-                        <textarea name="comentarios" id="comentarios" cols="60" rows="10"></textarea>
-                    </div>
-                </form>
-                <div class="main__section__form__btn">
-                    <input type="submit" value="Enviar consulta">
-                    <input type="reset" value="Borrar">
+            </div>  
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Declaro no haber tenido sintomas de covid 19 ni haber estado en contacto estrecho.
+                  </label>
                 </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+    </section>
+    <section class="contacto container">
+        <article class="row">
+            <div class="contacto__googlemaps col-md-12">
+                <h2>Estudio Lashes</h2>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.919078561504!2d-57.98285558461452!3d-34.933566380375375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7de92a3cbdb%3A0x4928b126341965cf!2sAv.%2044%201805%2C%20B1908FMB%20San%20Carlos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630437663971!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <br>
+            <div class="contacto__dire col-md-12 ">
+                <img src="https://i.stack.imgur.com/pQ1Cq.png" class="contacto__red__imgLogo img-fluid" alt="maps">
+                <h2>Calle 44 N 1085 entre 44 y 45, La Plata, Buenos Aires, Argentina</h2> 
+            </div>
+            
+        </article>
 
-            </div>
-        </section>
-        <section class="main__contacto">
-            <div class="main__contacto__redes">
-                <h3>ENCONTRAME EN REDES:</h3>
-                <br>
-                <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" class="imgLogo" alt="logo-ig">
-                <h3 class="inlineblock">@pestanas.lp</h3>
-                <br>
-                <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" class="imgLogo" alt="logo-ig">
-                <h3 class="inlineblock">@eugeniaperrino</h3>
-            </div>
-            <div class="main__contacto__direccion">
-                <h3>ESTUDIO LASHES</h3>
-                <br>
-                <img src="https://i.stack.imgur.com/pQ1Cq.png" class="main__contacto__direccion__imgLogo" alt="maps">
-                <p class="inlineblock">Calle 44 N 1085 entre 44 y 45, La Plata, Buenos Aires, Argentina</p>
-            </div>
-        </section>
-        
-    </main>
+    </section>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 
 <!--Footer-->
 <footer class="footer">
-    <article class="footer__articleFooter">
-        <div class="footer__articleFooter__ftr1">
-            <h2><strong>INFORMACION</strong></h2>
+    <div class="footer__contacto">
+        <h2><strong>CONTACTAME</strong></h2>
+        <div class="footer__contacto__redes">
+            <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" alt="logo-ig">
+            <h3>@pestanas.lp</h3>
             <br>
-            <ul>
-                <li><a href="pages/pestañas.html">Lifting de pestañas</a></li>
-                <li><a href="pages/pestañas.html">Botox de Pestañas</a></li>
-                <li><a href="pages/cejas.html">Perfilado de Cejas</a></li>
-                <li><a href="pages/cejas.html">Laminado de Cejas</a></li>
-                <li><a href="pages/pestañas.html">Matenimiento y Cuidado de las pestañas</a></li>
-             </ul>
-    
-        </div>
-    
-        <div class="footer__articleFooter__ftr1 footer__articleFooter__margin2">
-            <h2><strong>ATENCION AL CLIENTE</strong></h2>
+            <img src="https://pnglux.com/wp-content/uploads/2021/04/1617335549_Whatsapp-PNG-Transparent-Image-990x990.png" alt="logowp">
+            <h3>22149776484</h3>
             <br>
-            <ul>
-                <li><a href="pages/turnos.html">Como reservar mi turno</a></li>
-                <li><a href="pages/turnos.html">Cancelacion de Turnos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-             </ul>
+            <img src="https://i.stack.imgur.com/pQ1Cq.png" class="main__contacto__direccion__imgLogo" alt="maps">
+            <h3>Calle 44 N 1085 entre 44 y 45, La Plata, Buenos Aires, Argentina</h3>
         </div>
+     </div>
+    
     </article>
 
     <div class="footer__copyR">
-        <h5>Pestañas & Co. 2021. Derechos Reservados</h5>
+        <h3>Pestañas & Co. 2021. Derechos Reservados</h3>
     </div>
 </footer>
 </html>

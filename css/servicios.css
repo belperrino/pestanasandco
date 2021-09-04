@@ -80,7 +80,7 @@ body{
 
  
 .lifting__explicacion h2{
-     font-size: 1.6rem;
+     font-size: 1.4rem;
      font-weight: 600;
      font-family: 'Darker Grotesque', sans-serif;
      color: #343d41;
@@ -104,14 +104,14 @@ body{
     margin-bottom: 4rem;
 }
 .cejas h2{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: 0.5px;
     font-weight: 600;
     font-family: 'Darker Grotesque', sans-serif;
     margin-bottom: 1rem;
 }
 .cejas p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     line-height: 1.2;
 }
@@ -120,13 +120,13 @@ body{
     margin-top: 4rem;
 }
 .faq h2{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: 0.5px;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 .faq p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     line-height: 1.2;
     

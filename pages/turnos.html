@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pestañas & Co.</title>
+    <link rel="stylesheet" href="../css-boostrap/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../js/bootstrap.js">
     <link rel="stylesheet" href="../css/turnos.css">
     <link rel="stylesheet" href="../font/stylesheet.css">
     <link rel="stylesheet" href="../font/stylesheet 2.css">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+   
     
 </head>
 <body class="font">
@@ -17,139 +21,145 @@
         <nav class="header__menu">
             <ul>
                 <li><a href="../index.html">HOME</a></li>
-                <li><a href="">SERVICIOS</a>
-                    <ul>
-                        <li><a href="pestanas.html">PESTAÑAS</a></li>
-                        <li><a href="cejas.html">CEJAS</a></li>
-                    </ul>
-                </li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
                 <li><a href="turnos.html">TURNOS</a></li>
                 <li><a href="cursos.html">CURSOS</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
          </nav>
-         <div class="header__redes">
-            <ul>
-                <li>redes sociales</li>
-            </ul>
-        </div>
+         
 </header>
    
-<main class="grid">
+<main class="">
     
-    <Section class="grid__informacion">
-        <h2>Qué tengo que saber antes de pedir un turno?</h2>
-        <p>Durancion del turno 45 min.</p>
-        <p> El turno es válido para hacerse cualquiera de los servicios ofrecidos.</p>
-        <p>El día de tu turno me comunicas qué servicio te queres hacer.</p>
-        <p>Concurrir sin maquillaje y el rostro.</p> 
-        <p>Posterior al lifting y al laminado no podras mojarte la cara por 24 hs. </p>
-        <p>Es obligatorio el uso de barbijo.</p>
-        <p>Se te tomará la temperatura antes al llegar.</p>
-        <p>Trabajo con una clienta por vez, concurrir en tu horario.</p>
-        <p>IMPORTANTE! si estuviste en contacto con un caso COVID positivo debes cumplir con el ailamiento preventivo.</p>
-            
-        
-    </Section>
-    <section class="calendario">
-        <img src="https://binaries.templates.cdn.office.net/support/templates/es-es/lt04014209_quantized.png" alt="calendario">
+    <section class="sct-info container">
+        <article class="sct-info__informacion row">
+            <div class="sct-info__informacion__h2">
+                <h2>INFORMACION SOBRE LOS TURNOS</h2>
+            </div>
+            <div class="sct-info__informacion__texto col-md-12">
+                <p>Durancion del turno 45 min.
+                    <br>
+                El turno es válido para hacerse cualquiera de los servicios ofrecidos.
+                <br>
+                El día de tu turno me comunicas qué servicio te queres hacer.
+                <br>
+                Concurrir sin maquillaje y el rostro.
+                <br>
+                Posterior al lifting y al laminado no podras mojarte la cara por 24 hs. 
+                <br>
+                Es obligatorio el uso de barbijo.
+                <br>
+                Se te tomará la temperatura antes al llegar.
+                <br>
+                Trabajo con una clienta por vez, concurrir en tu horario.</p>
+                <p><strong> IMPORTANTE! si estuviste en contacto con un caso COVID positivo debes cumplir con el ailamiento preventivo.</strong> </p>       
+            </div>
+        </article>
     </section>
-    <section class="form">
-        <form action="">
-            <div class="form__formhijo">
-                <label for="Nombre">NOMBRE</label>
-                <input type="text" name="Nombre">
-                <br>
-                <br>
+
+<section class="sct-precios container">
+    <div class="sct-precios__h2">
+        <h2>PRECIOS DE LOS SERVICIOS</h2>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed font-size " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Lifting de pestaña
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body font-size">El servicio de lifting de pestaña incluye el aplicado de botox y tinte. Precio $1400</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed font-size" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Perfilado de cejas
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body font-size">Precio $400</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed font-size" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Perfilado + Laminado
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body font-size">Alisado de cejas con perfilado. Precio $800</div>
+          </div>
+        </div>
+      </div>
+
+</section>
+<section class="sct-form">
+
+    <form class="row g-3 font-size">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">  
+        </div>
+        <div class="col-12 form-floating">
+            <label for="floatingTextarea">Comentarios</label>
+            <textarea class="form-control" placeholder="Deja tu comentario" id="floatingTextarea"></textarea>
             
-                 <label for="Apellido">APELLIDO</label>
-                 <input type="text" name="Apellido">
-                <br>
-                 <br>
-            
-                 <label for="mail">MAIL</label>
-                 <input type="text" name="Mail">
-                 <br>
-                 <br>
+        </div>  
+        <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Declaro no haber tenido sintomas de covid 19 ni haber estado en contacto estrecho.
+              </label>
             </div>
-          
-            <div>
-                Declaro no presentar síntomas compatibles con COVID-19 ni haber sido contacto estrecho dentro de los 14 días.
-            
-                <input type="checkbox" name="acepta" value="1">
-            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
         </form>
-    </section>
-    <section class="tabla">
-        <h2>LISTA DE SERVICIOS Y PRECIOS</h2>
-        <table>
-            <tr>
-                <th>SERVICIO</th>
-                <th>PRECIO</th>
-                <th>CARACTERISTICAS</th>
-            </tr>
-            <tr>
-                <td>Lifting + botox + tinte</td>
-                <td>$1500</td>
-                <td>Si te gusta tener las pestañas oscuras como cuando usas rimmel pedí el tinte. Junto con el botox es una combinacion perfecta para el cuidado de tus pestañas.</td>
-                
-            </tr>
-            <tr>
-                <td>Perfilado + Laminado de cejas</td>
-                <td>$800</td>
-                <td>Cejas acorde a tus facciones. El laminado le da un alisado perfecto.</td>
-            </tr>
-            <tr>
-                <td>Botox</td>
-                <td>$300</td>
-                <td>Fortalecé y dale nutrición a tus pestañas</td>
-            </tr>
-            <tr>
-                <td>Tinte</td>
-                <td>$300</td>
-                <td>Pestañas oscuras como si tuvieras tu rimmel favorito</td>
-            </tr>
-            <tr> 
-                <td>Perfilado de Cejas</td>
-                <td>$500</td>
-                <td>Depilate las cejas en funcion de tus razgos faciales.</td>
-            </tr>
-        </table>
-    </section>
+</section>
     
 </main>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 
 <footer class="footer">
-    <article class="footer__articleFooter">
-        <div class="footer__articleFooter__ftr1">
-            <h2><strong>INFORMACION</strong></h2>
+    <div class="footer__contacto">
+        <h2><strong>CONTACTAME</strong></h2>
+        <div class="footer__contacto__redes">
+            <img src="https://cdn.icon-icons.com/icons2/2389/PNG/128/instagram_logo_icon_145167.png" alt="logo-ig">
+            <h3>@pestanas.lp</h3>
             <br>
-            <ul>
-                <li><a href="pages/pestañas.html">Lifting de pestañas</a></li>
-                <li><a href="pages/pestañas.html">Botox de Pestañas</a></li>
-                <li><a href="pages/cejas.html">Perfilado de Cejas</a></li>
-                <li><a href="pages/cejas.html">Laminado de Cejas</a></li>
-                <li><a href="pages/pestañas.html">Matenimiento y Cuidado de las pestañas</a></li>
-             </ul>
-    
-        </div>
-    
-        <div class="footer__articleFooter__ftr1 footer__articleFooter__margin2">
-            <h2><strong>ATENCION AL CLIENTE</strong></h2>
+            <img src="https://pnglux.com/wp-content/uploads/2021/04/1617335549_Whatsapp-PNG-Transparent-Image-990x990.png" alt="logowp">
+            <h3>22149776484</h3>
             <br>
-            <ul>
-                <li><a href="pages/turnos.html">Como reservar mi turno</a></li>
-                <li><a href="pages/turnos.html">Cancelacion de Turnos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-             </ul>
+            <img src="https://i.stack.imgur.com/pQ1Cq.png" class="main__contacto__direccion__imgLogo" alt="maps">
+            <h3>Calle 44 N 1085 entre 44 y 45, La Plata, Buenos Aires, Argentina</h3>
         </div>
+     </div>
+     
     </article>
 
+    
+
     <div class="footer__copyR">
-        <h5>Pestañas & Co. 2021. Derechos Reservados</h5>
+        <h3>Pestañas & Co. 2021. Derechos Reservados</h3>
     </div>
 </footer>
+
 </html>
 
 
