@@ -1,7 +1,7 @@
 @import './colores';
 
 $width-sct: 20rem;
-$theme: 'dark-mode';
+
 
 *{
     margin: 0;
@@ -15,67 +15,20 @@ html{
 }
 body{
     height: 100%;
-    background-color: $color-secundario;
+    background-color: $color-principal;
     font-family: 'Darker Grotesque', sans-serif; 
         
 }
 
 /*inicio de menu*/
-.header{
-    padding: 2px;
-    text-align: center;
-    letter-spacing: 0,5px;
-    background-color: $color-principal;
-    width: 100%;   
-    position: fixed;
-    height: 10%;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-
-    .header__menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 90%;
-
-        ul{
-            list-style: none;
-            background-color: #ffffffcc;
-            color: $color-header;
-            display: flex;
-  
-
-            li{
-                color: $color-header;
-                position: relative;
-                width: 24%;
-            
-
-                a:hover{
-                    color: $color-footer;
-            
-                }
-                a{
-                    color: $color-header;
-                    text-decoration: none;
-                    font-size: 16px;
-                    display: block;
-                    padding: 10px 15px;
-                    background-color: #ffffff33;
-
-                } 
-                
-            }
-        }
-    }
+.nav-color{
+    background-color: #f9f9f8 !important;
 }
 
 /* fin del menu, inicio imagen de fondo con titulo */
 
 .backcolor{
-    background-color: $color-secundario;
+    background-color: $color-principal;
 }
 .slider{
     height: 100%;
@@ -112,10 +65,10 @@ body{
 .sct2{
     width: 80%;
     margin: 0 auto;
-    min-height: 64vh;
     margin-top: 2%;
     padding: 2%;
     color: $color-footer;
+    background-color: $color-secundario;
   
     .sct2__intro{
         letter-spacing: 1px;
@@ -150,8 +103,10 @@ body{
 
 .sct3{
     width: 80%;
-    min-height: 56vh;
+    
     color: $color-footer;
+    background-color: #ffffff;
+    margin-top: 4rem;
 
     .sct3__servicios{
                 width: 45%;
@@ -229,17 +184,19 @@ body{
 #margenBajo{
     margin-bottom: 3.1rem;
 }
-.btn{
+.boton{
     font-weight: 600;
+    background-color: #cca5a2;
+    border-color: #cca5a2;
 }
 /* fin seccion 3, inicio imagen de fondo con titulo */
 
 .sct4{
     width: 80%;
     margin: 0 auto ;
-    margin-top: 2%;
+    margin-top: 4rem;
+    background-color: $color-secundario;
     
-    min-height: 46vh;
     margin-bottom: 2%;
 
         .sct4__h2{
@@ -266,56 +223,33 @@ body{
         }
 
         .sct4__article4 {
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
-            color: $color-footer;
             
-            flex-direction: row-reverse;
+            color: $color-footer;
+            height: 15rem;
+    
             margin-top: 1rem;
                         .sct4__article4__box {
                                 font-size: 1.3rem;
                                 letter-spacing: 0.5px;
-                                line-height: 1.2;
-                                            ul{
-                                        list-style: none;
-                                    
-                                            li{
-                                                font-size: 1.3rem;
-                                                
-                                            }
+                                line-height: 1.5;
+                                            
                                         }
                         }
-                        .sct4__article4__box2 {
-                                font-size: 1.3px;
-                                letter-spacing: 0.5px;
-                                line-height: 1.2;
-                
-                                        ul{
-                                            list-style: none;
-                                        
-                                            li{
-                                                font-size: 1.3rem;
-                                            } 
-                                        }
-                                        
-                         }
-        }
+                        
 }  
-
+.borde-final{
+    min-height: 5vh;
+}
 /* inicia footer*/
 
 .footer{
     background-color: $color-footer;
-    padding: 30px;
     margin: 0 auto;
-    width: 100%;
-    height: 28%;
     bottom: 0;
     color: $color-principal;
 
         .footer__contacto{
-            width: 100%;
+            margin: 0 auto;
 
                 h2{
                     font-size: 1rem;
@@ -351,16 +285,3 @@ body{
         }
 }
 
-@if $theme == 'dark-mode'{
-    body{
-        background-color: #343d41;
-    }
-} @else if $theme =='tierra'{
-    body{
-        background-color: #aa7d7a;
-    }
-} @else {
-    body{
-        background-color: #ffffff;
-    }
-}

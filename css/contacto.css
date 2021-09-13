@@ -19,63 +19,24 @@ body{
     font-family: 'Darker Grotesque', sans-serif;
 }
 /*inicio de menu*/
-.header{
-    padding: 2px;
-    text-align: center;
-    letter-spacing: 0,5px;
-    background-color: rgb(255 255 255);
-    width: 100%;   
-    position: fixed;
-    height: 10%;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
+.nav-color{
+    background-color: #f9f9f8 !important;
 }
-.header__menu{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90%;
-}
-.header__menu ul{
-    list-style: none;
-    background-color: rgb(255 255 255 / 80%);
-    color: rgb(170 125 122);
-    display: flex;
-   
-}
-.header__menu ul li{
-    color: rgb(170 125 122);
-    position: relative;
-    width: 24%;
-      
-}
-
-.header__menu ul li a:hover{
-    color: rgb(52 61 65);
-   
-}
-.header__menu ul li a{
-    color: rgb(170 125 122);
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-    padding: 10px 15px;
-    background-color: rgb(255 255 255 / 20%);
+.text-menu{
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #343d41;
 
 }
-
-.header__menu ul li:hover ul{
-    display: block;
-
+.color-brand{
+    color: #343d41;
+    font-size: 1.4rem;
 }
 
 .sct-form{
     width: 80%;
     margin: 0 auto;
-    min-height: 48vh;
+    
     margin-top: 4rem;
     padding: 2%;
     color: #343d41;
@@ -87,14 +48,23 @@ body{
 /* fin del menu, inicio imagen de fondo con titulo */
 /* inicio formulario*/
 
+.boton{
+    background-color: #cca5a2;
+    border-color: #cca5a2;
+    color: #ffffff;
+    
+}
 .contacto{
     width: 80%;
     margin: 0 auto;
-    min-height: 80vh;
+    margin-top: 4rem;
     background-color:#f9f9f8 ;
 
 }
 
+.contacto__dire{
+    margin-top: 1.5rem;
+}
 .contacto__dire h2{
     font-size: 1.3rem;
     letter-spacing: 1px;
@@ -118,19 +88,19 @@ body{
     text-align: center;
     padding: 0.5rem;
 }
+
+.borde-final{
+    min-height: 5vh;
+}
 /* inicia footer*/
 
 .footer {
     background-color: #343d41;
-    padding: 30px;
     margin: 0 auto;
-    width: 100%;
-    height: 28%;
     bottom: 0;
     color: #ffffff; 
 }
 .footer__contacto {
-      width: 80%;
       margin: 0 auto; 
 }
 .footer__contacto h2 {
@@ -140,7 +110,7 @@ body{
         line-height: 1.4; 
 }
 .footer__contacto__redes img {
-        width: 3%; 
+    width: 1.3rem; 
 }
 .footer__contacto h3 {
         display: inline-block;

@@ -10,49 +10,16 @@ html {
 
 body {
   height: 100%;
-  background-color: #f9f9f8;
+  background-color: #ffffff;
   font-family: 'Darker Grotesque', sans-serif; }
 
 /*inicio de menu*/
-.header {
-  padding: 2px;
-  text-align: center;
-  letter-spacing: 0,5px;
-  background-color: #ffffff;
-  width: 100%;
-  position: fixed;
-  height: 10%;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center; }
-  .header .header__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90%; }
-    .header .header__menu ul {
-      list-style: none;
-      background-color: #ffffffcc;
-      color: #aa7d7a;
-      display: flex; }
-      .header .header__menu ul li {
-        color: #aa7d7a;
-        position: relative;
-        width: 24%; }
-        .header .header__menu ul li a:hover {
-          color: #343d41; }
-        .header .header__menu ul li a {
-          color: #aa7d7a;
-          text-decoration: none;
-          font-size: 16px;
-          display: block;
-          padding: 10px 15px;
-          background-color: #ffffff33; }
+.nav-color {
+  background-color: #f9f9f8 !important; }
 
 /* fin del menu, inicio imagen de fondo con titulo */
 .backcolor {
-  background-color: #f9f9f8; }
+  background-color: #ffffff; }
 
 .slider {
   height: 100%; }
@@ -81,10 +48,10 @@ body {
 .sct2 {
   width: 80%;
   margin: 0 auto;
-  min-height: 64vh;
   margin-top: 2%;
   padding: 2%;
-  color: #343d41; }
+  color: #343d41;
+  background-color: #f9f9f8; }
   .sct2 .sct2__intro {
     letter-spacing: 1px;
     text-align: justify;
@@ -106,8 +73,9 @@ body {
 /* fin de seccion 2, inicio seccion 3 servicios mas buscados */
 .sct3 {
   width: 80%;
-  min-height: 56vh;
-  color: #343d41; }
+  color: #343d41;
+  background-color: #ffffff;
+  margin-top: 4rem; }
   .sct3 .sct3__servicios {
     width: 45%;
     margin-bottom: 1.5rem;
@@ -174,15 +142,17 @@ body {
 #margenBajo {
   margin-bottom: 3.1rem; }
 
-.btn {
-  font-weight: 600; }
+.boton {
+  font-weight: 600;
+  background-color: #cca5a2;
+  border-color: #cca5a2; }
 
 /* fin seccion 3, inicio imagen de fondo con titulo */
 .sct4 {
   width: 80%;
   margin: 0 auto;
-  margin-top: 2%;
-  min-height: 46vh;
+  margin-top: 4rem;
+  background-color: #f9f9f8;
   margin-bottom: 2%; }
   .sct4 .sct4__h2 {
     text-align: left;
@@ -202,40 +172,25 @@ body {
       padding: 0.5rem;
       text-align: center; }
   .sct4 .sct4__article4 {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
     color: #343d41;
-    flex-direction: row-reverse;
+    height: 15rem;
     margin-top: 1rem; }
     .sct4 .sct4__article4 .sct4__article4__box {
       font-size: 1.3rem;
       letter-spacing: 0.5px;
-      line-height: 1.2; }
-      .sct4 .sct4__article4 .sct4__article4__box ul {
-        list-style: none; }
-        .sct4 .sct4__article4 .sct4__article4__box ul li {
-          font-size: 1.3rem; }
-    .sct4 .sct4__article4 .sct4__article4__box2 {
-      font-size: 1.3px;
-      letter-spacing: 0.5px;
-      line-height: 1.2; }
-      .sct4 .sct4__article4 .sct4__article4__box2 ul {
-        list-style: none; }
-        .sct4 .sct4__article4 .sct4__article4__box2 ul li {
-          font-size: 1.3rem; }
+      line-height: 1.5; }
+
+.borde-final {
+  min-height: 5vh; }
 
 /* inicia footer*/
 .footer {
   background-color: #343d41;
-  padding: 30px;
   margin: 0 auto;
-  width: 100%;
-  height: 28%;
   bottom: 0;
   color: #ffffff; }
   .footer .footer__contacto {
-    width: 100%; }
+    margin: 0 auto; }
     .footer .footer__contacto h2 {
       font-size: 1rem;
       text-align: left;
@@ -258,6 +213,3 @@ body {
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.4; }
-
-body {
-  background-color: #343d41; }
