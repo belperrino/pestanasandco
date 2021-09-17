@@ -18,39 +18,55 @@ body{
     
 }
 /*inicio de menu*/
+.navbar-brand:hover{
+    font-size: 1.3rem ;
+}
+.nav-link{
+    color: #aa7d7a !important;
+}
+
+.nav-link:hover{
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
 .nav-color{
     background-color: #f9f9f8 !important;
 }
 
+
+
 .sct-info{
     width: 80%;
     margin: 0 auto;
-    
     margin-top: 2%;
-    padding: 2%;
+    padding: 2% 2% 1%;
     color: #343d41; ;
 }
 
 .sct-info__informacion{
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 .sct-info__informacion__h2 h2{
     font-size: 1.3rem;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
+
 .sct-info__informacion__texto{
     font-size: 1.2rem;
-    line-height: 1.2;
+    line-height: 1.4;
     letter-spacing: 0.5px;
+   margin-top: 0.5rem;
 }
 
+.sct-info__informacion__texto ul li{
+    list-style: none;
+}
 .sct-precios{
     width: 80%;
     margin: 0 auto;
-    
-    margin-top: 2%;
-    padding: 2%;
+    padding: 2% 2% 1%;
     color: #343d41;
     background-color: #ffffff;
 
@@ -61,45 +77,146 @@ body{
     letter-spacing: 1px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .sct-precios__h2 h2{
     font-size: 1.2rem; 
     color: #ffffff;
     background-color: #343d41; 
     font-weight: 600;
-    height: 2.6rem;
     padding: 0.5rem;
     text-align: center;
-    width: 18rem;
+    width: 38%;
+    border-radius: 0.25rem;
     
 }
+/*inicio acordeon*/
+.accordion-item{
+    font-size: 1.2rem;
+    border: 1px solid #dee2de !important;
+    background-color: rgb(249 249 248 / 40%);
+}
+
+.accordion-item h2 button{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #aa7d7a;
+    position: relative;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    border-radius: 0; 
+}
+
+.accordion-item h2 button .fa{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.accordion-item h2 button:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+
+.accordion-item h2 button.collapsed {
+    color: #343d41;
+    font-size: 1.2rem;
+}
+.accordion-item h2 button.collapsed .fa{
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-item h2 button.collapsed:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+
+.accordion-item .accordion-body{
+    padding-top: 20px;
+}
+ .accordion-button:not(.collapsed){
+     color: #aa7d7a;
+     font-weight: 600;
+     font-size: 1.2rem;
+     background-color: #f9f9f8;
+     border: none;
+
+ }   
+ .accordion-button:focus{
+     border-color: white;
+ }
+
+
+/*inicio formulario*/
 
 .sct-form{
     width: 80%;
     margin: 0 auto;
-    
-    margin-top: 2%;
     padding: 2%;
     color: #343d41;
     background-color: #f9f9f8 ;
 }
+
+.sct-form__h2{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Darker Grotesque', sans-serif !important;
+
+}
+.sct-form__h2 h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    color: #ffffff;
+    background-color:#343d41;
+    width: 38%;
+    text-align: center;
+    border-radius: 0.25rem;
+
+}
+
 .font-size{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
 }
 
-
+.btn-primary{
+    font-weight: 600;
+    background-color: #cca5a2;
+    border-color: #cca5a2;
+    color: #ffffff;
+    border-width: 2px;
+    padding: 10px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #aa7d7a;
+    border-color: #aa7d7a;
+  }
 /* inicia footer*/
 
 .footer {
     background-color: #343d41;
-    
+    padding: 2rem;
     margin: 0 auto;
-    
-   
     bottom: 0;
     color: #ffffff; 
+    width: 100%;
+    margin-top: 4%;
 }
 .footer__contacto {
      
@@ -132,4 +249,20 @@ body{
     letter-spacing: 1px;
     line-height: 1.4; 
 }
-  
+@media only screen and (max-width: 580px){
+    .sct-precios__h2 h2{
+        width: 100%;
+    }
+    .sct-form__h2 h2{
+        width: 100%;
+    }   
+}
+@media only screen and (min-width: 680px) and (max-width: 980px) {
+    .sct-precios__h2 h2{
+        width: 64%;
+    }
+    .sct-form__h2 h2{
+        width: 64%;
+    }   
+}
+}

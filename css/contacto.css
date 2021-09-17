@@ -19,6 +19,18 @@ body{
     font-family: 'Darker Grotesque', sans-serif;
 }
 /*inicio de menu*/
+.navbar-brand:hover{
+    font-size: 1.3rem ;
+}
+.nav-link{
+    color: #aa7d7a !important;
+}
+
+.nav-link:hover{
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
 .nav-color{
     background-color: #f9f9f8 !important;
 }
@@ -45,20 +57,26 @@ body{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
 }
-/* fin del menu, inicio imagen de fondo con titulo */
-/* inicio formulario*/
 
-.boton{
+.btn-primary{
+    font-weight: 600;
     background-color: #cca5a2;
     border-color: #cca5a2;
     color: #ffffff;
-    
+    border-width: 2px;
+    padding: 10px;
 }
+.btn-primary:hover {
+    color: #fff;
+    background-color: #aa7d7a;
+    border-color: #aa7d7a;
+  }
 .contacto{
     width: 80%;
     margin: 0 auto;
-    margin-top: 4rem;
+    
     background-color:#f9f9f8 ;
+    
 
 }
 
@@ -75,6 +93,9 @@ body{
 .contacto__dire img{
     width: 1.5rem;
 }
+.contacto__googlemaps{
+    margin-top: 2rem;
+}
 .contacto__googlemaps iframe{
     width: 100%;
 }
@@ -89,9 +110,7 @@ body{
     padding: 0.5rem;
 }
 
-.borde-final{
-    min-height: 5vh;
-}
+
 /* inicia footer*/
 
 .footer {
@@ -99,6 +118,9 @@ body{
     margin: 0 auto;
     bottom: 0;
     color: #ffffff; 
+    padding: 2rem;
+    width: 100%;
+    margin-top: 4rem;
 }
 .footer__contacto {
       margin: 0 auto; 

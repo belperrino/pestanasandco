@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../font/stylesheet.css">
     <link rel="stylesheet" href="../font/stylesheet 2.css">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     
 </head>
@@ -24,7 +25,7 @@
      <header>
         <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light nav-color">
             <div class="container-fluid">
-              <a class="navbar-brand color-brand"  href="../index.html"><strong>Pestañas & Co. </strong> </a>
+              <a class="navbar-brand color-brand"  href="../index.html"><strong>Pestañas&Co. </strong> </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -62,22 +63,15 @@
                 <h2>INFORMACION SOBRE LOS TURNOS</h2>
             </div>
             <div class="sct-info__informacion__texto col-md-12">
-                <p>Durancion del turno 45 min.
-                    <br>
-                El turno es válido para hacerse cualquiera de los servicios ofrecidos.
-                <br>
-                El día de tu turno me comunicas qué servicio te queres hacer.
-                <br>
-                Concurrir sin maquillaje y el rostro.
-                <br>
-                Posterior al lifting y al laminado no podras mojarte la cara por 24 hs. 
-                <br>
-                Es obligatorio el uso de barbijo.
-                <br>
-                Se te tomará la temperatura antes al llegar.
-                <br>
-                Trabajo con una clienta por vez, concurrir en tu horario.</p>
-                <p><strong> IMPORTANTE! si estuviste en contacto con un caso COVID positivo debes cumplir con el ailamiento preventivo.</strong> </p>       
+                <ul>
+                    <li><span class="fa fa-check square"></span> Los turnos tienen una duración de 45 minutos, siendo válidos para cualquier servicio ofrecidos. Podrás elegir los tratamientos el mismo día de tu visita.</li>
+                    <li><span class="fa fa-check square"></span>  Sólo se otorgará un turno por persona, en caso de no poder asistir se requerirá un aviso con antelación de 24hs. La puntualidad y la asistencia son un compromiso asumido a realizar la reserva.</li>
+                    <li><span class="fa fa-check square"></span>  El turno es válido para hacerse cualquiera de los servicios ofrecidos. </li>
+                    <li><span class="fa fa-check square"></span>  Podrás elegir el servicio el mismo día del turno. </li>
+                    <li><span class="fa fa-check square"></span>  Es necesario concurrir sin maquillaje. A su vez, deberás tener en cuenta que, luego de realizarte el lifting y/o laminado, no podrás mojar tu rostro por 24hs.</li>
+                    <li><span class="fa fa-check square"></span>  Es obligatorio el uso de barbijo y la higienización con alcohol. En caso de haber estado en contacto con algún caso sospechoso de COVID-19, deberá dar aviso y no asistir al turno, cumpliendo el protocolo. </li>
+                </ul>
+                
             </div>
         </article>
     </section>
@@ -88,30 +82,33 @@
     </div>
 
     <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+        <div class="accordion-item mb-2">
+          <h2 class="accordion-header mb-0" id="flush-headingOne">
             <button class="accordion-button collapsed font-size " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               Lifting de pestaña
+              <span class="fa fa-chevron-down"></span>
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body font-size">El servicio de lifting de pestaña incluye el aplicado de botox y tinte. Precio $1400</div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
+        <div class="accordion-item mb-2">
+          <h2 class="accordion-header mb-0" id="flush-headingTwo">
             <button class="accordion-button collapsed font-size " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               Perfilado de cejas
+              <span class="fa fa-chevron-down"></span>
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body font-size">Precio $400</div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
+        <div class="accordion-item mb-2">
+          <h2 class="accordion-header mb-0" id="flush-headingThree">
             <button class="accordion-button collapsed font-size " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
               Perfilado + Laminado
+              <span class="fa fa-chevron-down"></span>
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -122,6 +119,9 @@
 
 </section>
 <section class="sct-form">
+    <div class="sct-form__h2">
+        <h2>FORMULARIO PARA TURNOS</h2>
+    </div>
 
     <form class="row g-3 font-size">
         <div class="col-md-6">
@@ -136,9 +136,9 @@
             <label for="inputEmail4" class="form-label">Email</label>
             <input type="email" class="form-control" id="inputEmail4">  
         </div>
-        <div class="col-12 form-floating">
+        <div class="col-12 ">
             <label for="floatingTextarea">Comentarios</label>
-            <textarea class="form-control" placeholder="Deja tu comentario" id="floatingTextarea"></textarea>
+            <textarea class="form-control" id="floatingTextarea"></textarea>
             
         </div>  
         <div class="col-12">
@@ -153,6 +153,9 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
         </form>
+</section>
+<section class="borde-final">
+    <div></div>
 </section>
     
 </main>

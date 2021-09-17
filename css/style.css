@@ -14,6 +14,16 @@ body {
   font-family: 'Darker Grotesque', sans-serif; }
 
 /*inicio de menu*/
+.navbar-brand:hover {
+  font-size: 1.3rem; }
+
+.nav-link {
+  color: #aa7d7a !important; }
+
+.nav-link:hover {
+  font-size: 1.1rem;
+  font-weight: 600; }
+
 .nav-color {
   background-color: #f9f9f8 !important; }
 
@@ -35,10 +45,10 @@ body {
   margin: 0 auto;
   text-align: left;
   margin-top: 2%;
-  margin-bottom: 2%;
   padding: 2%; }
   .titulo h1 {
     font-size: 3.5rem;
+    font-weight: 600;
     letter-spacing: 4px;
     font-family: 'Darker Grotesque', sans-serif; }
   .titulo h2 {
@@ -48,7 +58,6 @@ body {
 .sct2 {
   width: 80%;
   margin: 0 auto;
-  margin-top: 2%;
   padding: 2%;
   color: #343d41;
   background-color: #f9f9f8; }
@@ -77,9 +86,10 @@ body {
   background-color: #ffffff;
   margin-top: 4rem; }
   .sct3 .sct3__servicios {
-    width: 45%;
+    width: 36%;
     margin-bottom: 1.5rem;
-    background-color: #343d41; }
+    background-color: #343d41;
+    border-radius: 0.25rem; }
     .sct3 .sct3__servicios h3 {
       text-align: center;
       letter-spacing: 1px;
@@ -88,8 +98,7 @@ body {
       padding: 0.5rem;
       background-color: #343d41;
       color: #ffffff;
-      width: 20rem;
-      height: 2.8rem; }
+      border-radius: 0.25rem; }
   .sct3 .sct3__article {
     margin-top: 2%; }
     .sct3 .sct3__article .sct3__article__box {
@@ -106,12 +115,13 @@ body {
       background-color: #f9f5f5;
       background-clip: border-box;
       border: 1px solid #00000020;
-      border-radius: 0.25rem; }
+      border-radius: 0.25rem;
+      height: 28rem; }
 
 .margenes {
   margin-bottom: 0.8rem;
   margin-top: 0.8rem;
-  height: 28.5rem;
+  height: 94%;
   background-color: #f9f9f8 !important; }
 
 .bordes {
@@ -120,7 +130,8 @@ body {
   background-color: #f8f9fa; }
 
 .card-text {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  height: 8rem; }
 
 .card-img-top {
   width: 100%;
@@ -129,23 +140,35 @@ body {
   opacity: 0.8;
   filter: brightness(0.9); }
 
-#margenAlto {
-  margin-top: 1rem; }
-
+/*
+#margenAlto{
+    margin-top: 1rem;
+}  
+*/
 .card-title {
   font-weight: 600;
   font-size: 1.25rem; }
 
-#mrgBot {
-  margin-bottom: 1.5rem; }
-
-#margenBajo {
-  margin-bottom: 3.1rem; }
-
-.boton {
+/*
+#mrgBot{
+    margin-bottom: 1.5rem;
+}
+#margenBajo{
+    margin-bottom: 3.1rem;
+}
+*/
+.btn-primary {
   font-weight: 600;
   background-color: #cca5a2;
-  border-color: #cca5a2; }
+  border-color: #cca5a2;
+  color: #ffffff;
+  border-width: 2px;
+  padding: 10px; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #aa7d7a;
+  border-color: #aa7d7a; }
 
 /* fin seccion 3, inicio imagen de fondo con titulo */
 .sct4 {
@@ -165,34 +188,32 @@ body {
     .sct4 .sct4__h2 h2 {
       font-size: 1.3rem;
       font-weight: 600;
-      height: 2.8rem;
+      border-radius: 0.25rem;
       background-color: #343d41;
       color: #ffffff;
-      width: 32rem;
+      width: 60%;
       padding: 0.5rem;
       text-align: center; }
   .sct4 .sct4__article4 {
     color: #343d41;
-    height: 15rem;
     margin-top: 1rem; }
     .sct4 .sct4__article4 .sct4__article4__box {
       font-size: 1.3rem;
       letter-spacing: 0.5px;
       line-height: 1.5; }
 
-.borde-final {
-  min-height: 5vh; }
-
 /* inicia footer*/
 .footer {
   background-color: #343d41;
   margin: 0 auto;
   bottom: 0;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 2rem;
+  width: 100%; }
   .footer .footer__contacto {
     margin: 0 auto; }
     .footer .footer__contacto h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
       text-align: left;
       letter-spacing: 1px;
       line-height: 1.4; }
@@ -213,3 +234,7 @@ body {
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.4; }
+
+@media only screen and (max-width: 480px) {
+  .sct3__servicios {
+    width: 100%; } }

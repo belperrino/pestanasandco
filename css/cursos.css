@@ -18,82 +18,157 @@ body{
     font-family: 'Darker Grotesque', sans-serif;
 }
 /*inicio de menu*/
+.navbar-brand:hover{
+    font-size: 1.3rem ;
+}
+.nav-link{
+    color: #aa7d7a !important;
+}
+
+.nav-link:hover{
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
 .nav-color{
     background-color: #f9f9f8 !important;
 }
 .sct-informacion{
     width: 80%;
-    min-height: 46vh;
+    margin-top: 5rem;
     color: #343d41;
     margin: 0 auto;
     padding: 1rem;
 
 }
-.sct-informacion__h2 h2{
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
- 
+
 .sct-informacion__alerta{
-    background-color: #aa7d7a1c;
-    color:#343d41;
+    background-color: #435056;
+    color:white;
     font-size: 1.3rem;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.4);
+    border-radius: 0.25rem;
+    margin-top: 5rem;
 }
 
-.sct-informacion__alerta h2{
-    
+.me-2{
+    margin-right: 1.5rem!important;
 }
 .font-size h2{
-    font-size: 1.4rem;
-    font-weight:500;
+    font-size: 1.2rem;
+    font-weight:600;
     letter-spacing: 1px;
 }
 .font-size h3{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 .sct-cursoLift{
     width: 80%;
-    min-height: 64vh;
+    background-color: #f9f9f8;
     color: #343d41;
     margin: 0 auto;
     padding: 1rem;
 
 }
-.sct-cursoLift__info{
-    margin-bottom: 3rem;
 
-}
 .sct-cursoLift__info h2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     font-weight: 600;
 
 }
 
-.sct-cursoLift__info p{
+.sct-cursoLift__info__p p{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
-    line-height: 1.2;
+    line-height: 1.4;
+}
+/*inicio acordeon*/
+
+.accordion-item{
+    font-size: 1.2rem;
+    border: 1px solid #dee2de !important;
+    background-color: rgb(249 249 248 / 40%);
 }
 
+.accordion-item h2 button{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #aa7d7a;
+    position: relative;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    border-radius: 0; 
+}
 
-.font-size-ul{
+.accordion-item h2 button .fa{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.accordion-item h2 button:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+
+.accordion-item h2 button.collapsed {
+    color: #343d41;
+    font-size: 1.2rem;
+}
+.accordion-item h2 button.collapsed .fa{
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-item h2 button.collapsed:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+
+.accordion-collapse{
+    background-color: white;
+}
+.accordion-item .accordion-body{
+    padding-top: 20px;
+}
+ .accordion-button:not(.collapsed){
+     color: #aa7d7a;
+     font-weight: 600;
+     font-size: 1.2rem;
+     background-color: white;
+     border: none;
+
+ }   
+ .accordion-button:focus{
+     border-color: white;
+ }
+
+
+
+.font-size-ol{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
-}
-
-.sct-cursoCejas__valores{
-    margin-top: 4rem;
+   
 }
 
 .sct-cursoLift__valores h2{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
 }
 
@@ -102,24 +177,26 @@ body{
     letter-spacing: 0.5px;
     font-weight: 600;
 }
+/*seccion curso cejas*/
 
 .sct-cursoCejas{
     width: 80%;
-    min-height: 54vh;
     color: #343d41;
     margin: 0 auto;
     padding: 1rem;
+    background-color: #f9f9f8;
+    margin-top: 2rem;
 
 }
-.sct-cursoCejas__info h2{
-    font-size: 1.4rem;
+.sct-cursoCejas__info__h2 h2{
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
-.sct-cursoCejas__info p{
+.sct-cursoCejas__info__p{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
-    line-height: 1.2;
+    line-height: 1.4;
 
 }
 
@@ -130,17 +207,21 @@ body{
 
 }
 
+/*seccion informacion sobre cursos*/
+
 .sct-info2{
     width: 80%;
-    min-height: 32vh;
     color: #343d41;
     margin: 0 auto;
     padding: 1rem;
 
 }
-
+.sct-info2__h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .sct-info2__h2 h2{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
@@ -148,8 +229,10 @@ body{
 .sct-info2__p{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
-    line-height: 1.2;
+    line-height: 1.4;
 }
+
+/*seccion formulario*/
 
 .sct-formulario{
     width: 80%;
@@ -157,8 +240,11 @@ body{
     color: #343d41;
     margin: 0 auto;
     padding: 1rem;
+    background-color: #f9f9f8;
 }
-
+.sct-formulario__h2{
+    margin-bottom: 1rem;
+}
 .sct-formulario h2{
     font-size: 1.3rem;
     font-weight: 600;
@@ -170,14 +256,28 @@ body{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
 }
+.btn-primary{
+    font-weight: 600;
+    background-color: #cca5a2;
+    border-color: #cca5a2;
+    color: #ffffff;
+    border-width: 2px;
+    padding: 10px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #aa7d7a;
+    border-color: #aa7d7a;
+  }
+
 .footer {
     background-color: #343d41;
-    
     margin: 0 auto;
-    
-   
     bottom: 0;
     color: #ffffff; 
+    padding: 2rem;
+    width: 100%;
+    margin-top: 5%;
 }
 .footer__contacto {
      

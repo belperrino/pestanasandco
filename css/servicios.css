@@ -18,6 +18,19 @@ body{
     font-family: 'Darker Grotesque', sans-serif;
 }
 /*inicio de menu*/
+
+.navbar-brand:hover{
+    font-size: 1.3rem ;
+}
+.nav-link{
+    color: #aa7d7a !important;
+}
+
+.nav-link:hover{
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
 .nav-color{
     background-color: #f9f9f8 !important;
 }
@@ -25,11 +38,18 @@ body{
 .lifting{ 
     margin-top: 6rem;
     
+    width: 80%;
+    padding: 2% 2% 1%;
+    margin: 0 auto;
+    
 
 }
 
- 
-.lifting__explicacion h2{
+.lifting__explicacion__titulo{
+     margin-top: 4rem;
+ }
+
+.lifting__explicacion__titulo h2{
      font-size: 1.4rem;
      font-weight: 600;
      font-family: 'Darker Grotesque', sans-serif;
@@ -46,7 +66,9 @@ body{
 }
 
 .cejas{
-   
+    width: 80%;
+    padding: 2%;
+    margin: 0 auto;
     background-color: #f9f9f8;
 }
 
@@ -67,27 +89,116 @@ body{
     line-height: 1.2;
 }
 .faq{
+    width: 80%;
+    padding: 2%;
+    margin: 0 auto;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.2rem;
+    max-height: 75vh;
     
-    margin-top: 2rem;
     
 }
-.faq h2{
-    font-size: 1.4rem;
-    letter-spacing: 0.5px;
-    font-weight: 600;
+.faq__h2{
     margin-bottom: 1rem;
 }
-.faq p{
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    line-height: 1.2;
-    
+
+.titulo{
+    width: 50%;
+    height: 36px;
+    padding: 4px;
+    color:#ffff;
+    background-color: #343d41;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 0.25rem;
+
+
 }
+
+
+/*inicio acordeon*/
+
+.accordion-item{
+    font-size: 1.2rem;
+    border: 1px solid #dee2de !important;
+    background-color: rgb(249 249 248 / 40%);
+}
+
+.accordion-item h2 button{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #aa7d7a;
+    position: relative;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    border-radius: 0; 
+}
+
+.accordion-item h2 button .fa{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.accordion-item h2 button:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+
+.accordion-item h2 button.collapsed {
+    color: #343d41;
+    font-size: 1.2rem;
+}
+.accordion-item h2 button.collapsed .fa{
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-item h2 button.collapsed:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+
+.accordion-item .accordion-body{
+    padding-top: 20px;
+}
+ .accordion-button:not(.collapsed){
+     color: #aa7d7a;
+     font-weight: 600;
+     font-size: 1.2rem;
+     background-color: #f9f9f8;
+     border: none;
+
+ }   
+ .accordion-button:focus{
+     border-color: white;
+ }
+
+
+/*inicio del footer*/
+
 .footer {
     background-color: #343d41;
     margin: 0 auto; 
     bottom: 0;
     color: #ffffff; 
+    padding: 2rem;
+    width: 100%;
+    margin-top: 2rem;
 }
 .footer__contacto {
       margin: 0 auto; 
@@ -119,4 +230,8 @@ body{
     letter-spacing: 1px;
     line-height: 1.4; 
 }
-  
+@media only screen and (max-width: 480px){
+    .titulo{
+        width: 100%;
+    }
+}

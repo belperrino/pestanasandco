@@ -1,5 +1,6 @@
 @import './colores';
 
+
 $width-sct: 20rem;
 
 
@@ -21,6 +22,18 @@ body{
 }
 
 /*inicio de menu*/
+.navbar-brand:hover{
+    font-size: 1.3rem ;
+}
+.nav-link{
+    color: #aa7d7a !important;
+}
+
+.nav-link:hover{
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
 .nav-color{
     background-color: #f9f9f8 !important;
 }
@@ -47,11 +60,12 @@ body{
     margin: 0 auto;
     text-align: left;
     margin-top: 2%;
-    margin-bottom: 2%;
+    
     padding: 2%;
 
     h1{
         font-size: 3.5rem;
+        font-weight: 600;
         letter-spacing: 4px;
         font-family: 'Darker Grotesque', sans-serif;
     }    
@@ -65,7 +79,6 @@ body{
 .sct2{
     width: 80%;
     margin: 0 auto;
-    margin-top: 2%;
     padding: 2%;
     color: $color-footer;
     background-color: $color-secundario;
@@ -109,9 +122,10 @@ body{
     margin-top: 4rem;
 
     .sct3__servicios{
-                width: 45%;
+                width: 36%;
                 margin-bottom: 1.5rem;
                 background-color: $color-footer;
+                border-radius: 0.25rem;
 
                     h3{
                         text-align: center;
@@ -121,8 +135,8 @@ body{
                         padding: 0.5rem;
                         background-color: $color-footer;
                         color: $color-principal;
-                        width: $width-sct;
-                        height: 2.8rem;
+                        border-radius: 0.25rem;
+                        
                     }
     }
     .sct3__article{
@@ -143,6 +157,7 @@ body{
             background-clip: border-box;
             border: 1px solid #00000020;
             border-radius: 0.25rem;
+            height: 28rem;
 
         }
     }
@@ -151,7 +166,7 @@ body{
 .margenes{
     margin-bottom: 0.8rem;
     margin-top: 0.8rem;
-    height: 28.5rem;
+    height: 94%;
     background-color: $color-secundario !important;
 }
 .bordes{
@@ -162,6 +177,7 @@ body{
 
 .card-text{
     font-size: 1.2rem;
+    height: 8rem;
 }
 
 .card-img-top {
@@ -171,24 +187,36 @@ body{
     opacity: 0.8;
     filter: brightness(0.9);
 }
+/*
 #margenAlto{
     margin-top: 1rem;
 }  
+*/
 .card-title{
     font-weight: 600;
     font-size: 1.25rem;
 }
+/*
 #mrgBot{
     margin-bottom: 1.5rem;
 }
 #margenBajo{
     margin-bottom: 3.1rem;
 }
-.boton{
+*/
+.btn-primary{
     font-weight: 600;
     background-color: #cca5a2;
     border-color: #cca5a2;
+    color: #ffffff;
+    border-width: 2px;
+    padding: 10px;
 }
+.btn-primary:hover {
+    color: #fff;
+    background-color: #aa7d7a;
+    border-color: #aa7d7a;
+  }
 /* fin seccion 3, inicio imagen de fondo con titulo */
 
 .sct4{
@@ -212,10 +240,10 @@ body{
                 h2{
                     font-size: 1.3rem;
                     font-weight: 600;
-                    height: 2.8rem;
+                    border-radius: 0.25rem;
                     background-color: $color-footer;
                     color: $color-principal;
-                    width: $width-sct + 12;
+                    width: 60%;
                     padding: 0.5rem;
                     text-align: center;
                 
@@ -225,8 +253,6 @@ body{
         .sct4__article4 {
             
             color: $color-footer;
-            height: 15rem;
-    
             margin-top: 1rem;
                         .sct4__article4__box {
                                 font-size: 1.3rem;
@@ -237,9 +263,7 @@ body{
                         }
                         
 }  
-.borde-final{
-    min-height: 5vh;
-}
+
 /* inicia footer*/
 
 .footer{
@@ -247,15 +271,17 @@ body{
     margin: 0 auto;
     bottom: 0;
     color: $color-principal;
+    padding: 2rem;
+    width: 100%;
 
         .footer__contacto{
             margin: 0 auto;
 
                 h2{
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     text-align: left;
                     letter-spacing: 1px;
-                    line-height: 1.4;
+                    line-height: 1.4; 
                 }
         }
 
@@ -283,5 +309,12 @@ body{
             letter-spacing: 1px;
             line-height: 1.4;
         }
+}
+
+@media only screen and (max-width: 480px){
+    .sct3__servicios{
+        width: 100%;
+    }
+
 }
 
