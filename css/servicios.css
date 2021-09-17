@@ -37,7 +37,6 @@ body{
 
 .lifting{ 
     margin-top: 6rem;
-    
     width: 80%;
     padding: 2% 2% 1%;
     margin: 0 auto;
@@ -50,7 +49,7 @@ body{
  }
 
 .lifting__explicacion__titulo h2{
-     font-size: 1.4rem;
+     font-size: 1.3rem;
      font-weight: 600;
      font-family: 'Darker Grotesque', sans-serif;
      color: #343d41;
@@ -60,7 +59,7 @@ body{
 
 .lifting__explicacion__texto{
     line-height: 1.2;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     font-family: 'Darker Grotesque', sans-serif;
 }
@@ -77,7 +76,7 @@ body{
     padding: 1.5rem;
 }
 .cejas h2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
     font-weight: 600;
     font-family: 'Darker Grotesque', sans-serif;
@@ -94,7 +93,7 @@ body{
     margin: 0 auto;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 1.2rem;
-    max-height: 75vh;
+    max-height: 90vh;
     
     
 }
@@ -176,7 +175,7 @@ body{
 .accordion-item .accordion-body{
     padding-top: 20px;
 }
- .accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed){
      color: #aa7d7a;
      font-weight: 600;
      font-size: 1.2rem;
@@ -230,8 +229,57 @@ body{
     letter-spacing: 1px;
     line-height: 1.4; 
 }
-@media only screen and (max-width: 480px){
+@media only screen and (min-width: 370px) and (max-width: 600px){
+    .lifting__explicacion__titulo h2{
+        font-size: 1.1rem;
+    }
+    .lifting__explicacion__texto{
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .carousel{
+        margin-top: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .cejas h2{
+        font-size: 1.1rem;
+        
+    }
+    .cejas p{
+        font-size: 1rem;
+    }
+    .faq{
+        font-size: 1rem;
+    }
     .titulo{
         width: 100%;
+        font-size: 1.1rem;
+    }
+    .accordion-item{
+        font-size: 1rem;
+    }
+    .accordion-item h2 button.collapsed {
+       
+        font-size: 1rem;
+    }
+    .accordion-button:not(.collapsed){
+        font-size: 1rem;
+    }
+    .footer__contacto h2 {
+        font-size: 1rem;
+    }
+    .footer__contacto h3{
+        font-size: 0.9rem;
+    }
+    .footer__copyR h3{
+        font-size: 0.9rem;
+
+    }
+    .cejas__fotos__laminado{
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
+
+
+

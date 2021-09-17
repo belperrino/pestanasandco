@@ -64,10 +64,10 @@ body {
   .sct2 .sct2__intro {
     letter-spacing: 1px;
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.2; }
     .sct2 .sct2__intro p {
-      font-size: 1.3rem; }
+      font-size: 1.2rem; }
   .sct2 .sct2__imagsct2 {
     width: 50%; }
     .sct2 .sct2__imagsct2 .sct2__imagsct2__imgeuge {
@@ -140,23 +140,10 @@ body {
   opacity: 0.8;
   filter: brightness(0.9); }
 
-/*
-#margenAlto{
-    margin-top: 1rem;
-}  
-*/
 .card-title {
   font-weight: 600;
   font-size: 1.25rem; }
 
-/*
-#mrgBot{
-    margin-bottom: 1.5rem;
-}
-#margenBajo{
-    margin-bottom: 3.1rem;
-}
-*/
 .btn-primary {
   font-weight: 600;
   background-color: #cca5a2;
@@ -235,6 +222,35 @@ body {
     letter-spacing: 1px;
     line-height: 1.4; }
 
-@media only screen and (max-width: 480px) {
-  .sct3__servicios {
-    width: 100%; } }
+@media only screen and (min-width: 370px) and (max-width: 600px) {
+  .titulo h1 {
+    font-size: 2.4rem; }
+  .titulo h2 {
+    font-size: 1.2rem; }
+  .sct2 .sct2__intro p {
+    font-size: 1rem; }
+  .sct3 .sct3__servicios {
+    width: 100%; }
+  .sct3 .sct3__servicios h3 {
+    font-size: 1.1rem; }
+  .card-title {
+    font-size: 1.1rem; }
+  .card-text {
+    font-size: 1rem;
+    height: 6rem; }
+  .margenes {
+    height: 90%; }
+  .sct4 .sct4__h2 h2 {
+    font-size: 1.1rem;
+    width: 100%; }
+  .sct4 .sct4__article4 .sct4__article4__box {
+    font-size: 1rem; }
+  .footer__contacto h2 {
+    font-size: 1rem; }
+  .footer__contacto h3 {
+    font-size: 0.9rem; }
+  .footer__copyR h3 {
+    font-size: 0.9rem; }
+  .cejas__fotos__laminado {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem; } }

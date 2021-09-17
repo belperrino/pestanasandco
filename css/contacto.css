@@ -27,28 +27,19 @@ body{
 }
 
 .nav-link:hover{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     
 }
 .nav-color{
     background-color: #f9f9f8 !important;
 }
-.text-menu{
-    font-size: 1.0rem;
-    font-weight: 500;
-    color: #343d41;
 
-}
-.color-brand{
-    color: #343d41;
-    font-size: 1.4rem;
-}
+
 
 .sct-form{
     width: 80%;
     margin: 0 auto;
-    
     margin-top: 4rem;
     padding: 2%;
     color: #343d41;
@@ -74,10 +65,7 @@ body{
 .contacto{
     width: 80%;
     margin: 0 auto;
-    
     background-color:#f9f9f8 ;
-    
-
 }
 
 .contacto__dire{
@@ -98,16 +86,6 @@ body{
 }
 .contacto__googlemaps iframe{
     width: 100%;
-}
-.contacto__googlemaps h2{
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    height: 2.6rem;
-    width: 10rem;
-    background-color: #343d41;
-    color: #ffffff; 
-    text-align: center;
-    padding: 0.5rem;
 }
 
 
@@ -152,4 +130,32 @@ body{
     letter-spacing: 1px;
     line-height: 1.4; 
 }
-  
+
+@media only screen and (min-width: 370px) and (max-width: 600px){
+    .font-size{
+        font-size: 1rem;
+    }
+    .contacto__dire h2{
+        font-size: 1.1rem;
+    }
+    .font-size{
+        font-size: 1rem;
+       
+    }
+
+    .footer__contacto h2 {
+        font-size: 1rem;
+    }
+    .footer__contacto h3{
+        font-size: 0.9rem;
+    }
+    .footer__copyR h3{
+        font-size: 0.9rem;
+
+    }
+
+}
+
+
+
+}

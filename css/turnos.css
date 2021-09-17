@@ -249,14 +249,60 @@ body{
     letter-spacing: 1px;
     line-height: 1.4; 
 }
-@media only screen and (max-width: 580px){
+@media only screen and (min-width: 370px) and (max-width: 600px){
     .sct-precios__h2 h2{
-        width: 100%;
-    }
-    .sct-form__h2 h2{
-        width: 100%;
-    }   
+            width: 100%;
+            font-size: 1rem;
+        }
+        .sct-form__h2 h2{
+            width: 100%;
+        } 
+        .form-label{
+            padding: 0.3rem;
+        }
+        .sct-info__informacion {
+            margin-top: 3.5rem;
+        }
+        .sct-info__informacion__h2 h2{
+            font-size: 1.1rem;
+            
+        }
+        
+        .sct-info__informacion__texto{
+            font-size: 1rem;
+        }
+        .accordion-item{
+            font-size: 1rem;
+        }
+        .accordion-item h2 button.collapsed {
+           
+            font-size: 1rem;
+        }
+        .accordion-button:not(.collapsed){
+            font-size: 1rem;
+        }
+        .sct-form__h2 h2{
+            font-size: 1.1rem;
+        }
+        .font-size{
+            font-size: 1rem;
+           
+        }
+
+        .footer__contacto h2 {
+            font-size: 1rem;
+        }
+        .footer__contacto h3{
+            font-size: 0.9rem;
+        }
+        .footer__copyR h3{
+            font-size: 0.9rem;
+    
+        }
+
 }
+     
+
 @media only screen and (min-width: 680px) and (max-width: 980px) {
     .sct-precios__h2 h2{
         width: 64%;
@@ -265,4 +311,4 @@ body{
         width: 64%;
     }   
 }
-}
+

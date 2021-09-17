@@ -170,7 +170,9 @@ body{
 .sct-cursoLift__valores h2{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
+    font-weight: 600;
 }
+
 
 .font-size{
     font-size: 1.2rem;
@@ -310,4 +312,86 @@ body{
     letter-spacing: 1px;
     line-height: 1.4; 
 }
-  
+@media only screen and (min-width: 370px) and (max-width: 600px){
+    .sct-informacion__alerta{
+        font-size: 1.1rem;
+    }
+    .font-size h2{
+        font-size: 1rem;
+    }
+    .font-size h3{
+        font-size: 1rem;
+    }
+    .sct-cursoLift__info h2{
+        font-size: 1.1rem;
+    }
+    
+    .sct-cursoLift__info__p p{
+        font-size: 1rem;
+    }
+
+    .accordion-item{
+        font-size: 1rem;
+    }
+    .accordion-item h2 button.collapsed {
+       
+        font-size: 1rem;
+    }
+    .accordion-button:not(.collapsed){
+        font-size: 1rem;
+    }
+    .accordion-item h2 button.collapsed .fa {
+        right: 12px;
+    }
+    
+    .font-size-ol{
+        font-size: 1rem;
+    }
+    
+    .sct-cursoLift__valores h2{
+        font-size: 1rem;
+    }
+    
+    .font-size{
+        font-size: 1rem;
+    }
+    .sct-cursoCejas__info__h2 h2{
+        font-size: 1.1rem;
+    }
+    .sct-cursoCejas__info__p{
+        font-size: 1rem;
+    }
+    
+    .sct-cursoCejas__valores h2{
+        font-size: 1rem;
+    }
+    .sct-info2__h2 h2{
+        font-size: 1.1rem;
+
+    }
+    
+    .sct-info2__p{
+        font-size: 1rem;
+    }
+    .sct-formulario h2{
+        font-size: 1.1rem;
+    }
+    
+    .sct-formulario__form{
+        font-size: 1rem;
+    }
+
+
+    .footer__contacto h2 {
+        font-size: 1rem;
+    }
+    .footer__contacto h3{
+        font-size: 0.9rem;
+    }
+    .footer__copyR h3{
+        font-size: 0.9rem;
+
+    }
+
+
+}
